@@ -1,0 +1,1693 @@
+<html><h2 id="crossreference" class="list">T&eacute;rminos de Ontología para la Educación Superior para clases, propiedades y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por Ontología para la Educación Superior.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Clases</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#1_2_ciclo" title="http://www.ontoedsup.org/vocabulary#1_2_ciclo">1_2_ciclo</a>
+      </li>
+      <li>
+         <a href="#Alumno" title="http://www.ontoedsup.org/vocabulary#Alumno">Alumno</a>
+      </li>
+      <li>
+         <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+      </li>
+      <li>
+         <a href="#Competencia" title="http://www.ontoedsup.org/vocabulary#Competencia">Competencia</a>
+      </li>
+      <li>
+         <a href="#Coordinador" title="http://www.ontoedsup.org/vocabulary#Coordinador">Coordinador</a>
+      </li>
+      <li>
+         <a href="#Curso" title="http://www.ontoedsup.org/vocabulary#Curso">Curso</a>
+      </li>
+      <li>
+         <a href="#Director" title="http://www.ontoedsup.org/vocabulary#Director">Director</a>
+      </li>
+      <li>
+         <a href="#Doctorado" title="http://www.ontoedsup.org/vocabulary#Doctorado">Doctorado</a>
+      </li>
+      <li>
+         <a href="#Escuela" title="http://www.ontoedsup.org/vocabulary#Escuela">Escuela</a>
+      </li>
+      <li>
+         <a href="#Evaluacion" title="http://www.ontoedsup.org/vocabulary#Evaluacion">Evaluacion</a>
+      </li>
+      <li>
+         <a href="#Grado" title="http://www.ontoedsup.org/vocabulary#Grado">Grado</a>
+      </li>
+      <li>
+         <a href="#Material" title="http://www.ontoedsup.org/vocabulary#Material">Material didáctico</a>
+      </li>
+      <li>
+         <a href="#Master" title="http://www.ontoedsup.org/vocabulary#Master">Máster</a>
+      </li>
+      <li>
+         <a href="#Profesor" title="http://www.ontoedsup.org/vocabulary#Profesor">Profesor</a>
+      </li>
+      <li>
+         <a href="#Semestre" title="http://www.ontoedsup.org/vocabulary#Semestre">Semestre</a>
+      </li>
+      <li>
+         <a href="#Tarea_investigacion"
+            title="http://www.ontoedsup.org/vocabulary#Tarea_investigacion">Tarea de investigacion</a>
+      </li>
+      <li>
+         <a href="#Tesis" title="http://www.ontoedsup.org/vocabulary#Tesis">Tesis</a>
+      </li>
+      <li>
+         <a href="#Titulo" title="http://www.ontoedsup.org/vocabulary#Titulo">Título</a>
+      </li>
+      <li>
+         <a href="#Universidad" title="http://www.ontoedsup.org/vocabulary#Universidad">Universidad</a>
+      </li>
+   </ul>
+   <div class="entity" id="1_2_ciclo">
+      <h3>1_2_ciclo<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#1_2_ciclo</p>
+      <div class="comment">
+         <span class="markdown">Títulos de grado y máster (subclase). Tienen en común su estructura, ya que ambos se componen de una serie de asignaturas encapsuladas en cursos y semestres.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Titulo" title="http://www.ontoedsup.org/vocabulary#Titulo">Título</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#Grado" title="http://www.ontoedsup.org/vocabulary#Grado">Grado</a>
+            <sup class="type-c" title="clase">c</sup>, <a href="#Master" title="http://www.ontoedsup.org/vocabulary#Master">Máster</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#Doctorado" title="http://www.ontoedsup.org/vocabulary#Doctorado">Doctorado</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Alumno">
+      <h3>Alumno<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Alumno</p>
+      <div class="comment">
+         <span class="markdown">Agente inscrito en varias asignaturas, que busca obtener las competencias fijadas de un título en concreto</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#estudiaAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#estudiaAsignatura">Estudia asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#asignaturaEstudiadaPor"
+               title="http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor">Asignatura estudiada por</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Asignatura">
+      <h3>Asignatura<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Asignatura</p>
+      <div class="comment">
+         <span class="markdown">Parte de un semestre, donde se imparten una serie de conocimientos que vienen especificados en las competencias. Usan dos recursos bien diferenciados que son el material educativo y los sistemas de evaluación. Su duración viene fijada por el número de créditos.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Group">group</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#asignaturaEstudiadaPor"
+               title="http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor">Asignatura estudiada por</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#asignaturaImpartidaPor"
+               title="http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor">Asignatura impartida por</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#num_creditos" title="http://www.ontoedsup.org/vocabulary#num_creditos">Numero de créditos</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#perteneceASemestre"
+               title="http://www.ontoedsup.org/vocabulary#perteneceASemestre">Pertenece a semestre</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneCompetencia"
+               title="http://www.ontoedsup.org/vocabulary#tieneCompetencia">Tiene competencia</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneMaterial"
+               title="http://www.ontoedsup.org/vocabulary#tieneMaterial">Tiene material</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneSistemaEvaluacion"
+               title="http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion">Tiene sistema de evaluación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#competenciaEnAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura">Competencia en asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#estudiaAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#estudiaAsignatura">Estudia asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#imparteAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#imparteAsignatura">Imparte asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#materialEnAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#materialEnAsignatura">Material en asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#evaluacionEnAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura">Sistema de evaluación en asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#tieneAsignatura">Tiene asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Competencia">
+      <h3>Competencia<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Competencia</p>
+      <div class="comment">
+         <span class="markdown">Habilidades y/o conocimientos que el título debe reflejar. Se imparten en una o varias asignaturas.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#competenciaEnAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura">Competencia en asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#tieneCompetencia"
+               title="http://www.ontoedsup.org/vocabulary#tieneCompetencia">Tiene competencia</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Coordinador">
+      <h3>Coordinador<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Coordinador</p>
+      <div class="comment">
+         <span class="markdown">Profesor que además tiene la obligación de asegurar el correcto funcionamiento de un determinado curso.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Profesor" title="http://www.ontoedsup.org/vocabulary#Profesor">Profesor</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#coordinaCurso"
+               title="http://www.ontoedsup.org/vocabulary#coordinaCurso">Coordina curso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#cursoCoordinado"
+               title="http://www.ontoedsup.org/vocabulary#cursoCoordinado">Curso coordinado</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Curso">
+      <h3>Curso<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Curso</p>
+      <div class="comment">
+         <span class="markdown">Primera división temporal de los títulos de primer y segundo ciclo. Corresponde a un año.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#cursoCoordinado"
+               title="http://www.ontoedsup.org/vocabulary#cursoCoordinado">Curso coordinado</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#perteneceATitulo"
+               title="http://www.ontoedsup.org/vocabulary#perteneceATitulo">Pertenece a título</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneSemestre"
+               title="http://www.ontoedsup.org/vocabulary#tieneSemestre">Tiene semestre</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#coordinaCurso"
+               title="http://www.ontoedsup.org/vocabulary#coordinaCurso">Coordina curso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#perteneceACurso"
+               title="http://www.ontoedsup.org/vocabulary#perteneceACurso">Pertenece a curso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneCurso" title="http://www.ontoedsup.org/vocabulary#tieneCurso">Tiene curso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Director">
+      <h3>Director<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Director</p>
+      <div class="comment">
+         <span class="markdown">Profesor que además tiene la obligación de asegurar el correcto funcionamiento de la escuela.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Profesor" title="http://www.ontoedsup.org/vocabulary#Profesor">Profesor</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#dirigeEscuela"
+               title="http://www.ontoedsup.org/vocabulary#dirigeEscuela">Dirige escuela</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#escuelaDirigida"
+               title="http://www.ontoedsup.org/vocabulary#escuelaDirigida">Escuela dirigida</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Doctorado">
+      <h3>Doctorado<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Doctorado</p>
+      <div class="comment">
+         <span class="markdown">Título de tercer ciclo que tiene una estructura especial respecto a los de 1º y 2º ciclo, por lo que compone otra subclase diferente</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#Titulo" title="http://www.ontoedsup.org/vocabulary#Titulo">Título</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#tieneTesis" title="http://www.ontoedsup.org/vocabulary#tieneTesis">Tiene Tesis</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneTareaInvestigacion"
+               title="http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion">Tiene tarea de investigación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#perteneceADoctorado"
+               title="http://www.ontoedsup.org/vocabulary#perteneceADoctorado">Pertenece a doctorado</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tareaEnDoctorado"
+               title="http://www.ontoedsup.org/vocabulary#tareaEnDoctorado">Tarea en doctorado</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#1_2_ciclo" title="http://www.ontoedsup.org/vocabulary#1_2_ciclo">1_2_ciclo</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Escuela">
+      <h3>Escuela<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Escuela</p>
+      <div class="comment">
+         <span class="markdown">Lugar donde se imparten una serie de títulos determinados.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/org#Organization">organization</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#escuelaDirigida"
+               title="http://www.ontoedsup.org/vocabulary#escuelaDirigida">Escuela dirigida</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#perteneceAUniversidad"
+               title="http://www.ontoedsup.org/vocabulary#perteneceAUniversidad">PerteneceAUniversidad</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneTitulo" title="http://www.ontoedsup.org/vocabulary#tieneTitulo">Tiene Título</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#dirigeEscuela"
+               title="http://www.ontoedsup.org/vocabulary#dirigeEscuela">Dirige escuela</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#impartidoEn" title="http://www.ontoedsup.org/vocabulary#impartidoEn">Impartido en</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneEscuela" title="http://www.ontoedsup.org/vocabulary#tieneEscuela">Tiene escuela</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Evaluacion">
+      <h3>Evaluacion<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Evaluacion</p>
+      <div class="comment">
+         <span class="markdown">Método o conjunto de métodos que permite asegurar que el alumno ha conseguido las competencias propuestas</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#evaluacionEnAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura">Sistema de evaluación en asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#tieneSistemaEvaluacion"
+               title="http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion">Tiene sistema de evaluación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Grado">
+      <h3>Grado<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Grado</p>
+      <div class="comment">
+         <span class="markdown">Título de primer ciclo, corresponde a la formación más baja dentro de la educación superior.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#1_2_ciclo" title="http://www.ontoedsup.org/vocabulary#1_2_ciclo">1_2_ciclo</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#Master" title="http://www.ontoedsup.org/vocabulary#Master">Máster</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Material">
+      <h3>Material didáctico<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Material</p>
+      <div class="comment">
+         <span class="markdown">Todo recurso que se le proporciona al alumno para que desarrolle una serie de competencias fijadas.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#materialEnAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#materialEnAsignatura">Material en asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#tieneMaterial"
+               title="http://www.ontoedsup.org/vocabulary#tieneMaterial">Tiene material</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Master">
+      <h3>Máster<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Master</p>
+      <div class="comment">
+         <span class="markdown">Título de segundo ciclo, con duración inferior a la del Grado.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <a href="#1_2_ciclo" title="http://www.ontoedsup.org/vocabulary#1_2_ciclo">1_2_ciclo</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>disjunto a</dt>
+         <dd>
+            <a href="#Grado" title="http://www.ontoedsup.org/vocabulary#Grado">Grado</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Profesor">
+      <h3>Profesor<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Profesor</p>
+      <div class="comment">
+         <span class="markdown">Agente encargado de proporcionar material educativo y evaluar a los alumnos de una o varias asignaturas.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#Coordinador" title="http://www.ontoedsup.org/vocabulary#Coordinador">Coordinador</a>
+            <sup class="type-c" title="clase">c</sup>, <a href="#Director" title="http://www.ontoedsup.org/vocabulary#Director">Director</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#imparteAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#imparteAsignatura">Imparte asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#asignaturaImpartidaPor"
+               title="http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor">Asignatura impartida por</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Semestre">
+      <h3>Semestre<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Semestre</p>
+      <div class="comment">
+         <span class="markdown">Segunda división temporal de los títulos de primer y segundo ciclo. A cada curso le corresponde dos semestres.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://org.semanticweb.owlapi/error#Error2">error2</span>
+            <sup class="type-c" title="clase">c</sup>, <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#perteneceACurso"
+               title="http://www.ontoedsup.org/vocabulary#perteneceACurso">Pertenece a curso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneAsignatura"
+               title="http://www.ontoedsup.org/vocabulary#tieneAsignatura">Tiene asignatura</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#perteneceASemestre"
+               title="http://www.ontoedsup.org/vocabulary#perteneceASemestre">Pertenece a semestre</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneSemestre"
+               title="http://www.ontoedsup.org/vocabulary#tieneSemestre">Tiene semestre</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tarea_investigacion">
+      <h3>Tarea de investigacion<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Tarea_investigacion</p>
+      <div class="comment">
+         <span class="markdown">Actividades a realizar a lo largo de un doctorado que están relacionadas con la tesis.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#tareaEnDoctorado"
+               title="http://www.ontoedsup.org/vocabulary#tareaEnDoctorado">Tarea en doctorado</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#tieneTareaInvestigacion"
+               title="http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion">Tiene tarea de investigación</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tesis">
+      <h3>Tesis<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Tesis</p>
+      <div class="comment">
+         <span class="markdown">Trabajo que se realiza a lo largo de un doctorado, en el que se investiga sobre un tema en concreto para sacar conclusiones y resultados de utilidad.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#perteneceADoctorado"
+               title="http://www.ontoedsup.org/vocabulary#perteneceADoctorado">Pertenece a doctorado</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#tieneTesis" title="http://www.ontoedsup.org/vocabulary#tieneTesis">Tiene Tesis</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Titulo">
+      <h3>Título<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Titulo</p>
+      <div class="comment">
+         <span class="markdown">Itinerario académico donde se imparten una serie de conceptos. Si la evaluación de estos conceptos es positiva, el alumno obtiene el certificado de título.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>tiene subclases</dt>
+         <dd>
+            <a href="#1_2_ciclo" title="http://www.ontoedsup.org/vocabulary#1_2_ciclo">1_2_ciclo</a>
+            <sup class="type-c" title="clase">c</sup>, <a href="#Doctorado" title="http://www.ontoedsup.org/vocabulary#Doctorado">Doctorado</a>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#impartidoEn" title="http://www.ontoedsup.org/vocabulary#impartidoEn">Impartido en</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneCurso" title="http://www.ontoedsup.org/vocabulary#tieneCurso">Tiene curso</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#perteneceATitulo"
+               title="http://www.ontoedsup.org/vocabulary#perteneceATitulo">Pertenece a título</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#tieneTitulo" title="http://www.ontoedsup.org/vocabulary#tieneTitulo">Tiene Título</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Universidad">
+      <h3>Universidad<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#Universidad</p>
+      <div class="comment">
+         <span class="markdown">Institución donde se imparten cada uno de los títulos de educación superior.</span>
+      </div>
+      <dl class="description">
+         <dt>tiene superclases</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/org#Organization">organization</span>
+            <sup class="type-c" title="clase">c</sup>
+         </dd>
+         <dt>en dominio de</dt>
+         <dd>
+            <a href="#tieneEscuela" title="http://www.ontoedsup.org/vocabulary#tieneEscuela">Tiene escuela</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#perteneceAUniversidad"
+               title="http://www.ontoedsup.org/vocabulary#perteneceAUniversidad">PerteneceAUniversidad</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h2>Propiedades entre objetos</h2>
+   <ul class="hlist">
+      <li>
+         <a href="#asignaturaEstudiadaPor"
+            title="http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor">Asignatura estudiada por</a>
+      </li>
+      <li>
+         <a href="#asignaturaImpartidaPor"
+            title="http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor">Asignatura impartida por</a>
+      </li>
+      <li>
+         <a href="#competenciaEnAsignatura"
+            title="http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura">Competencia en asignatura</a>
+      </li>
+      <li>
+         <a href="#coordinaCurso"
+            title="http://www.ontoedsup.org/vocabulary#coordinaCurso">Coordina curso</a>
+      </li>
+      <li>
+         <a href="#cursoCoordinado"
+            title="http://www.ontoedsup.org/vocabulary#cursoCoordinado">Curso coordinado</a>
+      </li>
+      <li>
+         <a href="#dirigeEscuela"
+            title="http://www.ontoedsup.org/vocabulary#dirigeEscuela">Dirige escuela</a>
+      </li>
+      <li>
+         <a href="#escuelaDirigida"
+            title="http://www.ontoedsup.org/vocabulary#escuelaDirigida">Escuela dirigida</a>
+      </li>
+      <li>
+         <a href="#estudiaAsignatura"
+            title="http://www.ontoedsup.org/vocabulary#estudiaAsignatura">Estudia asignatura</a>
+      </li>
+      <li>
+         <a href="#imparteAsignatura"
+            title="http://www.ontoedsup.org/vocabulary#imparteAsignatura">Imparte asignatura</a>
+      </li>
+      <li>
+         <a href="#impartidoEn" title="http://www.ontoedsup.org/vocabulary#impartidoEn">Impartido en</a>
+      </li>
+      <li>
+         <a href="#materialEnAsignatura"
+            title="http://www.ontoedsup.org/vocabulary#materialEnAsignatura">Material en asignatura</a>
+      </li>
+      <li>
+         <a href="#perteneceACurso"
+            title="http://www.ontoedsup.org/vocabulary#perteneceACurso">Pertenece a curso</a>
+      </li>
+      <li>
+         <a href="#perteneceADoctorado"
+            title="http://www.ontoedsup.org/vocabulary#perteneceADoctorado">Pertenece a doctorado</a>
+      </li>
+      <li>
+         <a href="#perteneceASemestre"
+            title="http://www.ontoedsup.org/vocabulary#perteneceASemestre">Pertenece a semestre</a>
+      </li>
+      <li>
+         <a href="#perteneceATitulo"
+            title="http://www.ontoedsup.org/vocabulary#perteneceATitulo">Pertenece a título</a>
+      </li>
+      <li>
+         <a href="#perteneceAUniversidad"
+            title="http://www.ontoedsup.org/vocabulary#perteneceAUniversidad">PerteneceAUniversidad</a>
+      </li>
+      <li>
+         <a href="#evaluacionEnAsignatura"
+            title="http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura">Sistema de evaluación en asignatura</a>
+      </li>
+      <li>
+         <a href="#tareaEnDoctorado"
+            title="http://www.ontoedsup.org/vocabulary#tareaEnDoctorado">Tarea en doctorado</a>
+      </li>
+      <li>
+         <a href="#tieneAsignatura"
+            title="http://www.ontoedsup.org/vocabulary#tieneAsignatura">Tiene asignatura</a>
+      </li>
+      <li>
+         <a href="#tieneCompetencia"
+            title="http://www.ontoedsup.org/vocabulary#tieneCompetencia">Tiene competencia</a>
+      </li>
+      <li>
+         <a href="#tieneCurso" title="http://www.ontoedsup.org/vocabulary#tieneCurso">Tiene curso</a>
+      </li>
+      <li>
+         <a href="#tieneEscuela" title="http://www.ontoedsup.org/vocabulary#tieneEscuela">Tiene escuela</a>
+      </li>
+      <li>
+         <a href="#tieneMaterial"
+            title="http://www.ontoedsup.org/vocabulary#tieneMaterial">Tiene material</a>
+      </li>
+      <li>
+         <a href="#tieneSemestre"
+            title="http://www.ontoedsup.org/vocabulary#tieneSemestre">Tiene semestre</a>
+      </li>
+      <li>
+         <a href="#tieneSistemaEvaluacion"
+            title="http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion">Tiene sistema de evaluación</a>
+      </li>
+      <li>
+         <a href="#tieneTareaInvestigacion"
+            title="http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion">Tiene tarea de investigación</a>
+      </li>
+      <li>
+         <a href="#tieneTesis" title="http://www.ontoedsup.org/vocabulary#tieneTesis">Tiene Tesis</a>
+      </li>
+      <li>
+         <a href="#tieneTitulo" title="http://www.ontoedsup.org/vocabulary#tieneTitulo">Tiene Título</a>
+      </li>
+   </ul>
+   <div class="entity" id="asignaturaEstudiadaPor">
+      <h3>Asignatura estudiada por<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una asignatura con sus alumnos.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Alumno" title="http://www.ontoedsup.org/vocabulary#Alumno">Alumno</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#estudiaAsignatura"
+                  title="http://www.ontoedsup.org/vocabulary#estudiaAsignatura">Estudia asignatura</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="asignaturaImpartidaPor">
+      <h3>Asignatura impartida por<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una asignatura con un profesor.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Profesor" title="http://www.ontoedsup.org/vocabulary#Profesor">Profesor</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#imparteAsignatura"
+                  title="http://www.ontoedsup.org/vocabulary#imparteAsignatura">Imparte asignatura</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="competenciaEnAsignatura">
+      <h3>Competencia en asignatura<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una asignatura con una competencia.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Competencia" title="http://www.ontoedsup.org/vocabulary#Competencia">Competencia</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneCompetencia"
+                  title="http://www.ontoedsup.org/vocabulary#tieneCompetencia">Tiene competencia</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="coordinaCurso">
+      <h3>Coordina curso<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#coordinaCurso</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un coordinador con el curso que dirige.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Coordinador" title="http://www.ontoedsup.org/vocabulary#Coordinador">Coordinador</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Curso" title="http://www.ontoedsup.org/vocabulary#Curso">Curso</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#cursoCoordinado"
+                  title="http://www.ontoedsup.org/vocabulary#cursoCoordinado">Curso coordinado</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="cursoCoordinado">
+      <h3>Curso coordinado<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#cursoCoordinado</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un curso con un coordinador.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Curso" title="http://www.ontoedsup.org/vocabulary#Curso">Curso</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Coordinador" title="http://www.ontoedsup.org/vocabulary#Coordinador">Coordinador</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#coordinaCurso"
+                  title="http://www.ontoedsup.org/vocabulary#coordinaCurso">Coordina curso</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="dirigeEscuela">
+      <h3>Dirige escuela<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#dirigeEscuela</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un director con la escuela en la que ocupa dicho cargo.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Director" title="http://www.ontoedsup.org/vocabulary#Director">Director</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Escuela" title="http://www.ontoedsup.org/vocabulary#Escuela">Escuela</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#escuelaDirigida"
+                  title="http://www.ontoedsup.org/vocabulary#escuelaDirigida">Escuela dirigida</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="escuelaDirigida">
+      <h3>Escuela dirigida<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#escuelaDirigida</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una escuela con su director.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Escuela" title="http://www.ontoedsup.org/vocabulary#Escuela">Escuela</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Director" title="http://www.ontoedsup.org/vocabulary#Director">Director</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#dirigeEscuela"
+                  title="http://www.ontoedsup.org/vocabulary#dirigeEscuela">Dirige escuela</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="estudiaAsignatura">
+      <h3>Estudia asignatura<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#estudiaAsignatura</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un alumno con una de las asignaturas en las que está inscrito.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Alumno" title="http://www.ontoedsup.org/vocabulary#Alumno">Alumno</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#asignaturaEstudiadaPor"
+                  title="http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor">Asignatura estudiada por</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="imparteAsignatura">
+      <h3>Imparte asignatura<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#imparteAsignatura</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un profesor con una asignatura en la que imparte clase.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Profesor" title="http://www.ontoedsup.org/vocabulary#Profesor">Profesor</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#asignaturaImpartidaPor"
+                  title="http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor">Asignatura impartida por</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="impartidoEn">
+      <h3>Impartido en<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#impartidoEn</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una escuela con un título.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Titulo" title="http://www.ontoedsup.org/vocabulary#Titulo">Título</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Escuela" title="http://www.ontoedsup.org/vocabulary#Escuela">Escuela</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneTitulo" title="http://www.ontoedsup.org/vocabulary#tieneTitulo">Tiene Título</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="materialEnAsignatura">
+      <h3>Material en asignatura<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#materialEnAsignatura</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una asignatura con una instancia de material didáctico.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Material" title="http://www.ontoedsup.org/vocabulary#Material">Material didáctico</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneMaterial"
+                  title="http://www.ontoedsup.org/vocabulary#tieneMaterial">Tiene material</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="perteneceACurso">
+      <h3>Pertenece a curso<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#perteneceACurso</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un curso con un semestre específico.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Semestre" title="http://www.ontoedsup.org/vocabulary#Semestre">Semestre</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Curso" title="http://www.ontoedsup.org/vocabulary#Curso">Curso</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneSemestre"
+                  title="http://www.ontoedsup.org/vocabulary#tieneSemestre">Tiene semestre</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="perteneceADoctorado">
+      <h3>Pertenece a doctorado<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#perteneceADoctorado</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un programa de doctorado con su tesis.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Tesis" title="http://www.ontoedsup.org/vocabulary#Tesis">Tesis</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Doctorado" title="http://www.ontoedsup.org/vocabulary#Doctorado">Doctorado</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneTesis" title="http://www.ontoedsup.org/vocabulary#tieneTesis">Tiene Tesis</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="perteneceASemestre">
+      <h3>Pertenece a semestre<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#perteneceASemestre</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un semestre con uns asignatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Semestre" title="http://www.ontoedsup.org/vocabulary#Semestre">Semestre</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneAsignatura"
+                  title="http://www.ontoedsup.org/vocabulary#tieneAsignatura">Tiene asignatura</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="perteneceATitulo">
+      <h3>Pertenece a título<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#perteneceATitulo</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un título con un curso.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Curso" title="http://www.ontoedsup.org/vocabulary#Curso">Curso</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Titulo" title="http://www.ontoedsup.org/vocabulary#Titulo">Título</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneCurso" title="http://www.ontoedsup.org/vocabulary#tieneCurso">Tiene curso</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="perteneceAUniversidad">
+      <h3>PerteneceAUniversidad<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#perteneceAUniversidad</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una Universidad con una escuela determinada.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Escuela" title="http://www.ontoedsup.org/vocabulary#Escuela">Escuela</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Universidad" title="http://www.ontoedsup.org/vocabulary#Universidad">Universidad</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneEscuela" title="http://www.ontoedsup.org/vocabulary#tieneEscuela">Tiene escuela</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="evaluacionEnAsignatura">
+      <h3>Sistema de evaluación en asignatura<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una asignatura con una instancia de método de evaluación.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Evaluacion" title="http://www.ontoedsup.org/vocabulary#Evaluacion">Evaluacion</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneSistemaEvaluacion"
+                  title="http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion">Tiene sistema de evaluación</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tareaEnDoctorado">
+      <h3>Tarea en doctorado<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tareaEnDoctorado</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un programa de doctorado con una instancia de tarea de investigación.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Tarea_investigacion"
+                  title="http://www.ontoedsup.org/vocabulary#Tarea_investigacion">Tarea de investigacion</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Doctorado" title="http://www.ontoedsup.org/vocabulary#Doctorado">Doctorado</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tieneTareaInvestigacion"
+                  title="http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion">Tiene tarea de investigación</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneAsignatura">
+      <h3>Tiene asignatura<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneAsignatura</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una asignatura con un semestre que la contiene.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Semestre" title="http://www.ontoedsup.org/vocabulary#Semestre">Semestre</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#perteneceASemestre"
+                  title="http://www.ontoedsup.org/vocabulary#perteneceASemestre">Pertenece a semestre</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneCompetencia">
+      <h3>Tiene competencia<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneCompetencia</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una competencia determinada con una asignatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Competencia" title="http://www.ontoedsup.org/vocabulary#Competencia">Competencia</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#competenciaEnAsignatura"
+                  title="http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura">Competencia en asignatura</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneCurso">
+      <h3>Tiene curso<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneCurso</p>
+      <div class="comment">
+         <span class="markdown">Relaciona cada curso con el título al que pertenece.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Titulo" title="http://www.ontoedsup.org/vocabulary#Titulo">Título</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Curso" title="http://www.ontoedsup.org/vocabulary#Curso">Curso</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#perteneceATitulo"
+                  title="http://www.ontoedsup.org/vocabulary#perteneceATitulo">Pertenece a título</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneEscuela">
+      <h3>Tiene escuela<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneEscuela</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una escuela con la Universidad a la que pertenece.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Universidad" title="http://www.ontoedsup.org/vocabulary#Universidad">Universidad</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Escuela" title="http://www.ontoedsup.org/vocabulary#Escuela">Escuela</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#perteneceAUniversidad"
+                  title="http://www.ontoedsup.org/vocabulary#perteneceAUniversidad">PerteneceAUniversidad</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneMaterial">
+      <h3>Tiene material<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneMaterial</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una instancia de material didáctico con la asignatura en la que se usa.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Material" title="http://www.ontoedsup.org/vocabulary#Material">Material didáctico</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#materialEnAsignatura"
+                  title="http://www.ontoedsup.org/vocabulary#materialEnAsignatura">Material en asignatura</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneSemestre">
+      <h3>Tiene semestre<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneSemestre</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un semestre con el curso al que pertenece.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Curso" title="http://www.ontoedsup.org/vocabulary#Curso">Curso</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Semestre" title="http://www.ontoedsup.org/vocabulary#Semestre">Semestre</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#perteneceACurso"
+                  title="http://www.ontoedsup.org/vocabulary#perteneceACurso">Pertenece a curso</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneSistemaEvaluacion">
+      <h3>Tiene sistema de evaluación<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una instancia de método de evaluación con la asignatura en la que se utiliza.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Evaluacion" title="http://www.ontoedsup.org/vocabulary#Evaluacion">Evaluacion</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#evaluacionEnAsignatura"
+                  title="http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura">Sistema de evaluación en asignatura</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneTareaInvestigacion">
+      <h3>Tiene tarea de investigación<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una instancia de tarea de investigación con el doctorado en el que se desarrolla.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Doctorado" title="http://www.ontoedsup.org/vocabulary#Doctorado">Doctorado</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Tarea_investigacion"
+                  title="http://www.ontoedsup.org/vocabulary#Tarea_investigacion">Tarea de investigacion</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#tareaEnDoctorado"
+                  title="http://www.ontoedsup.org/vocabulary#tareaEnDoctorado">Tarea en doctorado</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneTesis">
+      <h3>Tiene Tesis<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneTesis</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una tesis con un programa de doctorado al que pertenece.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Doctorado" title="http://www.ontoedsup.org/vocabulary#Doctorado">Doctorado</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Tesis" title="http://www.ontoedsup.org/vocabulary#Tesis">Tesis</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#perteneceADoctorado"
+                  title="http://www.ontoedsup.org/vocabulary#perteneceADoctorado">Pertenece a doctorado</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tieneTitulo">
+      <h3>Tiene Título<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#tieneTitulo</p>
+      <div class="comment">
+         <span class="markdown">Relaciona un título con la escuela en la que se imparte.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Escuela" title="http://www.ontoedsup.org/vocabulary#Escuela">Escuela</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Titulo" title="http://www.ontoedsup.org/vocabulary#Titulo">Título</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#impartidoEn" title="http://www.ontoedsup.org/vocabulary#impartidoEn">Impartido en</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Propiedades de datos</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#num_creditos" title="http://www.ontoedsup.org/vocabulary#num_creditos">Numero de créditos</a>
+      </li>
+   </ul>
+   <div class="entity" id="num_creditos">
+      <h3>Numero de créditos<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.ontoedsup.org/vocabulary#num_creditos</p>
+      <div class="comment">
+         <span class="markdown">Indica el número de créditos que tiene una asignatura.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#Asignatura" title="http://www.ontoedsup.org/vocabulary#Asignatura">Asignatura</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#double">double</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Leyenda <span class="backlink"> volver a <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Clases">c</sup>: Clases <br/>
+<sup class="type-op" title="Propiedades de objeto">op</sup>: Propiedades de objeto <br/>
+<sup class="type-dp" title="Propiedades de datos">dp</sup>: Propiedades de datos <br/>
+<sup class="type-ni" title="Individuos">ni</sup>: Individuos
+</div>
+</div>
+</html>

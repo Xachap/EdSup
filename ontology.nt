@@ -1,0 +1,511 @@
+<http://www.ontoedsup.org/vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.ontoedsup.org/vocabulary> <http://purl.org/dc/terms/created> "2019-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.ontoedsup.org/vocabulary> <http://purl.org/dc/terms/creator> <_:genid2147483664> .
+<http://www.ontoedsup.org/vocabulary> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://www.ontoedsup.org/vocabulary> <http://purl.org/dc/terms/title> "Ontología para la Educación Superior"@es .
+<http://www.ontoedsup.org/vocabulary> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontología que contiene los elementos más importantes del esquema de conocimiento referente al entorno de la educación superior"@es .
+<http://www.ontoedsup.org/vocabulary> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología para la Educación Superior"@es .
+<http://www.ontoedsup.org/vocabulary> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#cardinality
+<http://www.w3.org/2002/07/owl#cardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor
+<http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#estudiaAsignatura> .
+<http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Alumno> .
+<http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una asignatura con sus alumnos."@es .
+<http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a subject to its students."@en .
+<http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor> <http://www.w3.org/2000/01/rdf-schema#label> "Asignatura estudiada por"@es .
+<http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor> <http://www.w3.org/2000/01/rdf-schema#label> "Subject learned by"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor
+<http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Profesor> .
+<http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una asignatura con un profesor."@es .
+<http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a subject with a teacher."@en .
+<http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor> <http://www.w3.org/2000/01/rdf-schema#label> "Asignatura impartida por"@es .
+<http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor> <http://www.w3.org/2000/01/rdf-schema#label> "Subject teached by"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura
+<http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#tieneCompetencia> .
+<http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Competencia> .
+<http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una asignatura con una competencia."@es .
+<http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a subject with a competence."@en .
+<http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Competence in subject"@en .
+<http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Competencia en asignatura"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#coordinaCurso
+<http://www.ontoedsup.org/vocabulary#coordinaCurso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#coordinaCurso> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#cursoCoordinado> .
+<http://www.ontoedsup.org/vocabulary#coordinaCurso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Coordinador> .
+<http://www.ontoedsup.org/vocabulary#coordinaCurso> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Curso> .
+<http://www.ontoedsup.org/vocabulary#coordinaCurso> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un coordinador con el curso que dirige."@es .
+<http://www.ontoedsup.org/vocabulary#coordinaCurso> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a coordinator with their corresponding course."@en .
+<http://www.ontoedsup.org/vocabulary#coordinaCurso> <http://www.w3.org/2000/01/rdf-schema#label> "Coordina curso"@es .
+<http://www.ontoedsup.org/vocabulary#coordinaCurso> <http://www.w3.org/2000/01/rdf-schema#label> "Coordinates course"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#cursoCoordinado
+<http://www.ontoedsup.org/vocabulary#cursoCoordinado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#cursoCoordinado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Curso> .
+<http://www.ontoedsup.org/vocabulary#cursoCoordinado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Coordinador> .
+<http://www.ontoedsup.org/vocabulary#cursoCoordinado> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un curso con un coordinador."@es .
+<http://www.ontoedsup.org/vocabulary#cursoCoordinado> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a course with a coordinator."@en .
+<http://www.ontoedsup.org/vocabulary#cursoCoordinado> <http://www.w3.org/2000/01/rdf-schema#label> "Coordinated course"@en .
+<http://www.ontoedsup.org/vocabulary#cursoCoordinado> <http://www.w3.org/2000/01/rdf-schema#label> "Curso coordinado"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#dirigeEscuela
+<http://www.ontoedsup.org/vocabulary#dirigeEscuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#dirigeEscuela> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#escuelaDirigida> .
+<http://www.ontoedsup.org/vocabulary#dirigeEscuela> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Director> .
+<http://www.ontoedsup.org/vocabulary#dirigeEscuela> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Escuela> .
+<http://www.ontoedsup.org/vocabulary#dirigeEscuela> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un director con la escuela en la que ocupa dicho cargo."@es .
+<http://www.ontoedsup.org/vocabulary#dirigeEscuela> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a director with its school."@en .
+<http://www.ontoedsup.org/vocabulary#dirigeEscuela> <http://www.w3.org/2000/01/rdf-schema#label> "Dirige escuela"@es .
+<http://www.ontoedsup.org/vocabulary#dirigeEscuela> <http://www.w3.org/2000/01/rdf-schema#label> "Heads up school"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#escuelaDirigida
+<http://www.ontoedsup.org/vocabulary#escuelaDirigida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#escuelaDirigida> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Escuela> .
+<http://www.ontoedsup.org/vocabulary#escuelaDirigida> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Director> .
+<http://www.ontoedsup.org/vocabulary#escuelaDirigida> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una escuela con su director."@es .
+<http://www.ontoedsup.org/vocabulary#escuelaDirigida> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a school with its director."@en .
+<http://www.ontoedsup.org/vocabulary#escuelaDirigida> <http://www.w3.org/2000/01/rdf-schema#label> "Directed school"@en .
+<http://www.ontoedsup.org/vocabulary#escuelaDirigida> <http://www.w3.org/2000/01/rdf-schema#label> "Escuela dirigida"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#estudiaAsignatura
+<http://www.ontoedsup.org/vocabulary#estudiaAsignatura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#estudiaAsignatura> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Alumno> .
+<http://www.ontoedsup.org/vocabulary#estudiaAsignatura> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#estudiaAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un alumno con una de las asignaturas en las que está inscrito."@es .
+<http://www.ontoedsup.org/vocabulary#estudiaAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a student with a subject in which is enrolled."@en .
+<http://www.ontoedsup.org/vocabulary#estudiaAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Estudia asignatura"@es .
+<http://www.ontoedsup.org/vocabulary#estudiaAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Learns subject"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura
+<http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Evaluacion> .
+<http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una asignatura con una instancia de método de evaluación."@es .
+<http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a subject with an instance of evaluation method."@en .
+<http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluation method in subject"@en .
+<http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema de evaluación en asignatura"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#imparteAsignatura
+<http://www.ontoedsup.org/vocabulary#imparteAsignatura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#imparteAsignatura> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor> .
+<http://www.ontoedsup.org/vocabulary#imparteAsignatura> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Profesor> .
+<http://www.ontoedsup.org/vocabulary#imparteAsignatura> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#imparteAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un profesor con una asignatura en la que imparte clase."@es .
+<http://www.ontoedsup.org/vocabulary#imparteAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a teacher with a subject in which teaches."@en .
+<http://www.ontoedsup.org/vocabulary#imparteAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Imparte asignatura"@es .
+<http://www.ontoedsup.org/vocabulary#imparteAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Teaches subject"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#impartidoEn
+<http://www.ontoedsup.org/vocabulary#impartidoEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#impartidoEn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Titulo> .
+<http://www.ontoedsup.org/vocabulary#impartidoEn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Escuela> .
+<http://www.ontoedsup.org/vocabulary#impartidoEn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una escuela con un título."@es .
+<http://www.ontoedsup.org/vocabulary#impartidoEn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a school with a certificate."@en .
+<http://www.ontoedsup.org/vocabulary#impartidoEn> <http://www.w3.org/2000/01/rdf-schema#label> "Impartido en"@es .
+<http://www.ontoedsup.org/vocabulary#impartidoEn> <http://www.w3.org/2000/01/rdf-schema#label> "Teached in"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#materialEnAsignatura
+<http://www.ontoedsup.org/vocabulary#materialEnAsignatura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#materialEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Material> .
+<http://www.ontoedsup.org/vocabulary#materialEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#materialEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una asignatura con una instancia de material didáctico."@es .
+<http://www.ontoedsup.org/vocabulary#materialEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a subject with an instance of didactic material."@en .
+<http://www.ontoedsup.org/vocabulary#materialEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Material en asignatura"@es .
+<http://www.ontoedsup.org/vocabulary#materialEnAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Material in subject"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#perteneceACurso
+<http://www.ontoedsup.org/vocabulary#perteneceACurso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#perteneceACurso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Semestre> .
+<http://www.ontoedsup.org/vocabulary#perteneceACurso> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Curso> .
+<http://www.ontoedsup.org/vocabulary#perteneceACurso> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un curso con un semestre específico."@es .
+<http://www.ontoedsup.org/vocabulary#perteneceACurso> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates course with a specific semester."@en .
+<http://www.ontoedsup.org/vocabulary#perteneceACurso> <http://www.w3.org/2000/01/rdf-schema#label> "Belongs to course"@en .
+<http://www.ontoedsup.org/vocabulary#perteneceACurso> <http://www.w3.org/2000/01/rdf-schema#label> "Pertenece a curso"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#perteneceADoctorado
+<http://www.ontoedsup.org/vocabulary#perteneceADoctorado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#perteneceADoctorado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Tesis> .
+<http://www.ontoedsup.org/vocabulary#perteneceADoctorado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Doctorado> .
+<http://www.ontoedsup.org/vocabulary#perteneceADoctorado> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un programa de doctorado con su tesis."@es .
+<http://www.ontoedsup.org/vocabulary#perteneceADoctorado> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a doctorate program with its thesis."@en .
+<http://www.ontoedsup.org/vocabulary#perteneceADoctorado> <http://www.w3.org/2000/01/rdf-schema#label> "Belongs to doctorate"@en .
+<http://www.ontoedsup.org/vocabulary#perteneceADoctorado> <http://www.w3.org/2000/01/rdf-schema#label> "Pertenece a doctorado"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#perteneceASemestre
+<http://www.ontoedsup.org/vocabulary#perteneceASemestre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#perteneceASemestre> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#tieneAsignatura> .
+<http://www.ontoedsup.org/vocabulary#perteneceASemestre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#perteneceASemestre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Semestre> .
+<http://www.ontoedsup.org/vocabulary#perteneceASemestre> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un semestre con uns asignatura."@es .
+<http://www.ontoedsup.org/vocabulary#perteneceASemestre> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a semester with a subject."@en .
+<http://www.ontoedsup.org/vocabulary#perteneceASemestre> <http://www.w3.org/2000/01/rdf-schema#label> "Belongs to semester"@en .
+<http://www.ontoedsup.org/vocabulary#perteneceASemestre> <http://www.w3.org/2000/01/rdf-schema#label> "Pertenece a semestre"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#perteneceATitulo
+<http://www.ontoedsup.org/vocabulary#perteneceATitulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#perteneceATitulo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Curso> .
+<http://www.ontoedsup.org/vocabulary#perteneceATitulo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Titulo> .
+<http://www.ontoedsup.org/vocabulary#perteneceATitulo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un título con un curso."@es .
+<http://www.ontoedsup.org/vocabulary#perteneceATitulo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a course with a certificate."@en .
+<http://www.ontoedsup.org/vocabulary#perteneceATitulo> <http://www.w3.org/2000/01/rdf-schema#label> "Belongs to certificate"@en .
+<http://www.ontoedsup.org/vocabulary#perteneceATitulo> <http://www.w3.org/2000/01/rdf-schema#label> "Pertenece a título"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#perteneceAUniversidad
+<http://www.ontoedsup.org/vocabulary#perteneceAUniversidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#perteneceAUniversidad> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#tieneEscuela> .
+<http://www.ontoedsup.org/vocabulary#perteneceAUniversidad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Escuela> .
+<http://www.ontoedsup.org/vocabulary#perteneceAUniversidad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Universidad> .
+<http://www.ontoedsup.org/vocabulary#perteneceAUniversidad> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una Universidad con una escuela determinada."@es .
+<http://www.ontoedsup.org/vocabulary#perteneceAUniversidad> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a University with a certain school."@en .
+<http://www.ontoedsup.org/vocabulary#perteneceAUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "Belongs to University"@en .
+<http://www.ontoedsup.org/vocabulary#perteneceAUniversidad> <http://www.w3.org/2000/01/rdf-schema#label> "PerteneceAUniversidad"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tareaEnDoctorado
+<http://www.ontoedsup.org/vocabulary#tareaEnDoctorado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tareaEnDoctorado> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion> .
+<http://www.ontoedsup.org/vocabulary#tareaEnDoctorado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Tarea_investigacion> .
+<http://www.ontoedsup.org/vocabulary#tareaEnDoctorado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Doctorado> .
+<http://www.ontoedsup.org/vocabulary#tareaEnDoctorado> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un programa de doctorado con una instancia de tarea de investigación."@es .
+<http://www.ontoedsup.org/vocabulary#tareaEnDoctorado> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a doctorate program with an instance of research task."@en .
+<http://www.ontoedsup.org/vocabulary#tareaEnDoctorado> <http://www.w3.org/2000/01/rdf-schema#label> "Tarea en doctorado"@es .
+<http://www.ontoedsup.org/vocabulary#tareaEnDoctorado> <http://www.w3.org/2000/01/rdf-schema#label> "Task in doctorate"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneAsignatura
+<http://www.ontoedsup.org/vocabulary#tieneAsignatura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneAsignatura> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Semestre> .
+<http://www.ontoedsup.org/vocabulary#tieneAsignatura> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#tieneAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una asignatura con un semestre que la contiene."@es .
+<http://www.ontoedsup.org/vocabulary#tieneAsignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a subject with its semester."@en .
+<http://www.ontoedsup.org/vocabulary#tieneAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Has subject"@en .
+<http://www.ontoedsup.org/vocabulary#tieneAsignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene asignatura"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneCompetencia
+<http://www.ontoedsup.org/vocabulary#tieneCompetencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneCompetencia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#tieneCompetencia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Competencia> .
+<http://www.ontoedsup.org/vocabulary#tieneCompetencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una competencia determinada con una asignatura."@es .
+<http://www.ontoedsup.org/vocabulary#tieneCompetencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competence with a subject."@en .
+<http://www.ontoedsup.org/vocabulary#tieneCompetencia> <http://www.w3.org/2000/01/rdf-schema#label> "Has competence"@en .
+<http://www.ontoedsup.org/vocabulary#tieneCompetencia> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene competencia"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneCurso
+<http://www.ontoedsup.org/vocabulary#tieneCurso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneCurso> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#perteneceATitulo> .
+<http://www.ontoedsup.org/vocabulary#tieneCurso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Titulo> .
+<http://www.ontoedsup.org/vocabulary#tieneCurso> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Curso> .
+<http://www.ontoedsup.org/vocabulary#tieneCurso> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona cada curso con el título al que pertenece."@es .
+<http://www.ontoedsup.org/vocabulary#tieneCurso> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a course with their corresponding certificate."@en .
+<http://www.ontoedsup.org/vocabulary#tieneCurso> <http://www.w3.org/2000/01/rdf-schema#label> "Has course"@en .
+<http://www.ontoedsup.org/vocabulary#tieneCurso> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene curso"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneEscuela
+<http://www.ontoedsup.org/vocabulary#tieneEscuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneEscuela> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Universidad> .
+<http://www.ontoedsup.org/vocabulary#tieneEscuela> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Escuela> .
+<http://www.ontoedsup.org/vocabulary#tieneEscuela> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una escuela con la Universidad a la que pertenece."@es .
+<http://www.ontoedsup.org/vocabulary#tieneEscuela> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a school with the University that it belongs."@en .
+<http://www.ontoedsup.org/vocabulary#tieneEscuela> <http://www.w3.org/2000/01/rdf-schema#label> "Has school"@en .
+<http://www.ontoedsup.org/vocabulary#tieneEscuela> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene escuela"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneMaterial
+<http://www.ontoedsup.org/vocabulary#tieneMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneMaterial> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#materialEnAsignatura> .
+<http://www.ontoedsup.org/vocabulary#tieneMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#tieneMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Material> .
+<http://www.ontoedsup.org/vocabulary#tieneMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una instancia de material didáctico con la asignatura en la que se usa."@es .
+<http://www.ontoedsup.org/vocabulary#tieneMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an instance of didactic material with a certain subject."@en .
+<http://www.ontoedsup.org/vocabulary#tieneMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Has material"@en .
+<http://www.ontoedsup.org/vocabulary#tieneMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene material"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneSemestre
+<http://www.ontoedsup.org/vocabulary#tieneSemestre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneSemestre> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#perteneceACurso> .
+<http://www.ontoedsup.org/vocabulary#tieneSemestre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Curso> .
+<http://www.ontoedsup.org/vocabulary#tieneSemestre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Semestre> .
+<http://www.ontoedsup.org/vocabulary#tieneSemestre> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un semestre con el curso al que pertenece."@es .
+<http://www.ontoedsup.org/vocabulary#tieneSemestre> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a specific semester with a certain course."@en .
+<http://www.ontoedsup.org/vocabulary#tieneSemestre> <http://www.w3.org/2000/01/rdf-schema#label> "Has semester"@en .
+<http://www.ontoedsup.org/vocabulary#tieneSemestre> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene semestre"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion
+<http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura> .
+<http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Evaluacion> .
+<http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una instancia de método de evaluación con la asignatura en la que se utiliza."@es .
+<http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an instance of evaluation method with the subject in which it is used."@en .
+<http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion> <http://www.w3.org/2000/01/rdf-schema#label> "Has evaluation method"@en .
+<http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene sistema de evaluación"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion
+<http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Doctorado> .
+<http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Tarea_investigacion> .
+<http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una instancia de tarea de investigación con el doctorado en el que se desarrolla."@es .
+<http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an instance of research task with the doctorate program in which is being performed."@en .
+<http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion> <http://www.w3.org/2000/01/rdf-schema#label> "Has research task"@en .
+<http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene tarea de investigación"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneTesis
+<http://www.ontoedsup.org/vocabulary#tieneTesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneTesis> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#perteneceADoctorado> .
+<http://www.ontoedsup.org/vocabulary#tieneTesis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Doctorado> .
+<http://www.ontoedsup.org/vocabulary#tieneTesis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Tesis> .
+<http://www.ontoedsup.org/vocabulary#tieneTesis> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una tesis con un programa de doctorado al que pertenece."@es .
+<http://www.ontoedsup.org/vocabulary#tieneTesis> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a thesis with a doctorate program."@en .
+<http://www.ontoedsup.org/vocabulary#tieneTesis> <http://www.w3.org/2000/01/rdf-schema#label> "Has Thesis"@en .
+<http://www.ontoedsup.org/vocabulary#tieneTesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Tesis"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#tieneTitulo
+<http://www.ontoedsup.org/vocabulary#tieneTitulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontoedsup.org/vocabulary#tieneTitulo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.ontoedsup.org/vocabulary#impartidoEn> .
+<http://www.ontoedsup.org/vocabulary#tieneTitulo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Escuela> .
+<http://www.ontoedsup.org/vocabulary#tieneTitulo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontoedsup.org/vocabulary#Titulo> .
+<http://www.ontoedsup.org/vocabulary#tieneTitulo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona un título con la escuela en la que se imparte."@es .
+<http://www.ontoedsup.org/vocabulary#tieneTitulo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a degree with a school in which is carried out."@en .
+<http://www.ontoedsup.org/vocabulary#tieneTitulo> <http://www.w3.org/2000/01/rdf-schema#label> "Has degree"@en .
+<http://www.ontoedsup.org/vocabulary#tieneTitulo> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Título"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontoedsup.org/vocabulary#num_creditos
+<http://www.ontoedsup.org/vocabulary#num_creditos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.ontoedsup.org/vocabulary#num_creditos> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontoedsup.org/vocabulary#Asignatura> .
+<http://www.ontoedsup.org/vocabulary#num_creditos> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.ontoedsup.org/vocabulary#num_creditos> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el número de créditos que tiene una asignatura."@es .
+<http://www.ontoedsup.org/vocabulary#num_creditos> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of credits that a subject has."@en .
+<http://www.ontoedsup.org/vocabulary#num_creditos> <http://www.w3.org/2000/01/rdf-schema#label> "Number of credits"@en .
+<http://www.ontoedsup.org/vocabulary#num_creditos> <http://www.w3.org/2000/01/rdf-schema#label> "Numero de créditos"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontoedsup.org/vocabulary#Alumno
+<http://www.ontoedsup.org/vocabulary#Alumno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Alumno> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Alumno> <http://www.w3.org/2000/01/rdf-schema#comment> "Agent enrolled in several subjects, who seeks to obtain the fixed competences of a particular degree."@en .
+<http://www.ontoedsup.org/vocabulary#Alumno> <http://www.w3.org/2000/01/rdf-schema#comment> "Agente inscrito en varias asignaturas, que busca obtener las competencias fijadas de un título en concreto"@es .
+<http://www.ontoedsup.org/vocabulary#Alumno> <http://www.w3.org/2000/01/rdf-schema#label> "Alumno"@es .
+<http://www.ontoedsup.org/vocabulary#Alumno> <http://www.w3.org/2000/01/rdf-schema#label> "Student"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#Asignatura
+<http://www.ontoedsup.org/vocabulary#Asignatura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Asignatura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Group> .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Asignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Part of a semester, where a set of knowledge, that come specified in the competences, is teached. They use two different type of resources: didactic material and evaluation methods. Their duration is fixed by the number of credits."@en .
+<http://www.ontoedsup.org/vocabulary#Asignatura> <http://www.w3.org/2000/01/rdf-schema#comment> "Parte de un semestre, donde se imparten una serie de conocimientos que vienen especificados en las competencias. Usan dos recursos bien diferenciados que son el material educativo y los sistemas de evaluación. Su duración viene fijada por el número de créditos."@es .
+<http://www.ontoedsup.org/vocabulary#Asignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Asignatura"@es .
+<http://www.ontoedsup.org/vocabulary#Asignatura> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#Competencia
+<http://www.ontoedsup.org/vocabulary#Competencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Competencia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontoedsup.org/vocabulary#Competencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Habilidades y/o conocimientos que el título debe reflejar. Se imparten en una o varias asignaturas."@es .
+<http://www.ontoedsup.org/vocabulary#Competencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Skills and/or knowledge that the title should attest. They are taught in one or several subjects."@en .
+<http://www.ontoedsup.org/vocabulary#Competencia> <http://www.w3.org/2000/01/rdf-schema#label> "Competencia"@es .
+<http://www.ontoedsup.org/vocabulary#Competencia> <http://www.w3.org/2000/01/rdf-schema#label> "Competency"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#Coordinador
+<http://www.ontoedsup.org/vocabulary#Coordinador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontoedsup.org/vocabulary#Profesor> .
+<http://www.ontoedsup.org/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#comment> "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de un determinado curso."@es .
+<http://www.ontoedsup.org/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#comment> "Teacher who also has to ensure the proper functioning of a particular course."@en .
+<http://www.ontoedsup.org/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#label> "Coordinador"@es .
+<http://www.ontoedsup.org/vocabulary#Coordinador> <http://www.w3.org/2000/01/rdf-schema#label> "Coordinator"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#Curso
+<http://www.ontoedsup.org/vocabulary#Curso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Curso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontoedsup.org/vocabulary#Curso> <http://www.w3.org/2000/01/rdf-schema#comment> "First temporal division of first and second cycle degrees. Corresponds to one year."@en .
+<http://www.ontoedsup.org/vocabulary#Curso> <http://www.w3.org/2000/01/rdf-schema#comment> "Primera división temporal de los títulos de primer y segundo ciclo. Corresponde a un año."@es .
+<http://www.ontoedsup.org/vocabulary#Curso> <http://www.w3.org/2000/01/rdf-schema#label> "Course"@en .
+<http://www.ontoedsup.org/vocabulary#Curso> <http://www.w3.org/2000/01/rdf-schema#label> "Curso"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#Director
+<http://www.ontoedsup.org/vocabulary#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontoedsup.org/vocabulary#Profesor> .
+<http://www.ontoedsup.org/vocabulary#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de la escuela."@es .
+<http://www.ontoedsup.org/vocabulary#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "Teacher who also has to ensure the proper functioning of a school."@en .
+<http://www.ontoedsup.org/vocabulary#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director"@en .
+<http://www.ontoedsup.org/vocabulary#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#Doctorado
+<http://www.ontoedsup.org/vocabulary#Doctorado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Doctorado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontoedsup.org/vocabulary#Titulo> .
+<http://www.ontoedsup.org/vocabulary#Doctorado> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontoedsup.org/vocabulary#1_2_ciclo> .
+<http://www.ontoedsup.org/vocabulary#Doctorado> <http://www.w3.org/2000/01/rdf-schema#comment> "Third cycle degree that has a special structure respect to the 1st and 2nd cycle, so it composes a different subclass."@en .
+<http://www.ontoedsup.org/vocabulary#Doctorado> <http://www.w3.org/2000/01/rdf-schema#comment> "Título de tercer ciclo que tiene una estructura especial respecto a los de 1º y 2º ciclo, por lo que compone otra subclase diferente"@es .
+<http://www.ontoedsup.org/vocabulary#Doctorado> <http://www.w3.org/2000/01/rdf-schema#label> "Doctorado"@es .
+<http://www.ontoedsup.org/vocabulary#Doctorado> <http://www.w3.org/2000/01/rdf-schema#label> "Doctoral degree"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#Escuela
+<http://www.ontoedsup.org/vocabulary#Escuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Escuela> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Escuela> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where a number of specific degrees are taught."@en .
+<http://www.ontoedsup.org/vocabulary#Escuela> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar donde se imparten una serie de títulos determinados."@es .
+<http://www.ontoedsup.org/vocabulary#Escuela> <http://www.w3.org/2000/01/rdf-schema#label> "Escuela"@es .
+<http://www.ontoedsup.org/vocabulary#Escuela> <http://www.w3.org/2000/01/rdf-schema#label> "School"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#Evaluacion
+<http://www.ontoedsup.org/vocabulary#Evaluacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Evaluacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontoedsup.org/vocabulary#Evaluacion> <http://www.w3.org/2000/01/rdf-schema#comment> "A method or set of methods that ensures that the student has achieved the proposed competencies."@en .
+<http://www.ontoedsup.org/vocabulary#Evaluacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Método o conjunto de métodos que permite asegurar que el alumno ha conseguido las competencias propuestas"@es .
+<http://www.ontoedsup.org/vocabulary#Evaluacion> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluacion"@es .
+<http://www.ontoedsup.org/vocabulary#Evaluacion> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluation"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#Grado
+<http://www.ontoedsup.org/vocabulary#Grado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Grado> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontoedsup.org/vocabulary#1_2_ciclo> .
+<http://www.ontoedsup.org/vocabulary#Grado> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontoedsup.org/vocabulary#Master> .
+<http://www.ontoedsup.org/vocabulary#Grado> <http://www.w3.org/2000/01/rdf-schema#comment> "First cycle degree, corresponds to the lowest educational step within higher education."@en .
+<http://www.ontoedsup.org/vocabulary#Grado> <http://www.w3.org/2000/01/rdf-schema#comment> "Título de primer ciclo, corresponde a la formación más baja dentro de la educación superior."@es .
+<http://www.ontoedsup.org/vocabulary#Grado> <http://www.w3.org/2000/01/rdf-schema#label> "Degree"@en .
+<http://www.ontoedsup.org/vocabulary#Grado> <http://www.w3.org/2000/01/rdf-schema#label> "Grado"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#Master
+<http://www.ontoedsup.org/vocabulary#Master> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Master> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontoedsup.org/vocabulary#1_2_ciclo> .
+<http://www.ontoedsup.org/vocabulary#Master> <http://www.w3.org/2000/01/rdf-schema#comment> "Second cycle degree, with a duration shorter than that a Degree."@en .
+<http://www.ontoedsup.org/vocabulary#Master> <http://www.w3.org/2000/01/rdf-schema#comment> "Título de segundo ciclo, con duración inferior a la del Grado."@es .
+<http://www.ontoedsup.org/vocabulary#Master> <http://www.w3.org/2000/01/rdf-schema#label> "Bachelor's degree"@en .
+<http://www.ontoedsup.org/vocabulary#Master> <http://www.w3.org/2000/01/rdf-schema#label> "Máster"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#Material
+<http://www.ontoedsup.org/vocabulary#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontoedsup.org/vocabulary#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "Any resource that is provided to the student to develop a series of fixed competences."@en .
+<http://www.ontoedsup.org/vocabulary#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "Todo recurso que se le proporciona al alumno para que desarrolle una serie de competencias fijadas."@es .
+<http://www.ontoedsup.org/vocabulary#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Didactic material"@en .
+<http://www.ontoedsup.org/vocabulary#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material didáctico"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#Profesor
+<http://www.ontoedsup.org/vocabulary#Profesor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.ontoedsup.org/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#comment> "Agent in charge of providing educational material and evaluating students in one or more subjects."@en .
+<http://www.ontoedsup.org/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#comment> "Agente encargado de proporcionar material educativo y evaluar a los alumnos de una o varias asignaturas."@es .
+<http://www.ontoedsup.org/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#label> "Profesor"@es .
+<http://www.ontoedsup.org/vocabulary#Profesor> <http://www.w3.org/2000/01/rdf-schema#label> "Teacher"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#Semestre
+<http://www.ontoedsup.org/vocabulary#Semestre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Semestre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
+<http://www.ontoedsup.org/vocabulary#Semestre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontoedsup.org/vocabulary#Semestre> <http://www.w3.org/2000/01/rdf-schema#comment> "Second temporal division of first and second cycle degrees. Each course corresponds to two semesters."@en .
+<http://www.ontoedsup.org/vocabulary#Semestre> <http://www.w3.org/2000/01/rdf-schema#comment> "Segunda división temporal de los títulos de primer y segundo ciclo. A cada curso le corresponde dos semestres."@es .
+<http://www.ontoedsup.org/vocabulary#Semestre> <http://www.w3.org/2000/01/rdf-schema#label> "Semester"@en .
+<http://www.ontoedsup.org/vocabulary#Semestre> <http://www.w3.org/2000/01/rdf-schema#label> "Semestre"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#Tarea_investigacion
+<http://www.ontoedsup.org/vocabulary#Tarea_investigacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Tarea_investigacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontoedsup.org/vocabulary#Tarea_investigacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividades a realizar a lo largo de un doctorado que están relacionadas con la tesis."@es .
+<http://www.ontoedsup.org/vocabulary#Tarea_investigacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Task to be carried out during a doctorate that are related to the thesis."@en .
+<http://www.ontoedsup.org/vocabulary#Tarea_investigacion> <http://www.w3.org/2000/01/rdf-schema#label> "Research task"@en .
+<http://www.ontoedsup.org/vocabulary#Tarea_investigacion> <http://www.w3.org/2000/01/rdf-schema#label> "Tarea de investigacion"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#Tesis
+<http://www.ontoedsup.org/vocabulary#Tesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Tesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontoedsup.org/vocabulary#Tesis> <http://www.w3.org/2000/01/rdf-schema#comment> "Trabajo que se realiza a lo largo de un doctorado, en el que se investiga sobre un tema en concreto para sacar conclusiones y resultados de utilidad."@es .
+<http://www.ontoedsup.org/vocabulary#Tesis> <http://www.w3.org/2000/01/rdf-schema#comment> "Work carried out during a doctorate, in which a research is carried out on a specific subject in order to draw conclusions and useful results."@en .
+<http://www.ontoedsup.org/vocabulary#Tesis> <http://www.w3.org/2000/01/rdf-schema#label> "Tesis"@es .
+<http://www.ontoedsup.org/vocabulary#Tesis> <http://www.w3.org/2000/01/rdf-schema#label> "Thesis"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#Titulo
+<http://www.ontoedsup.org/vocabulary#Titulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Titulo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.ontoedsup.org/vocabulary#Titulo> <http://www.w3.org/2000/01/rdf-schema#comment> "Academic itinerary where a series of concepts are taught. If the evaluation of these concepts is positive, the student obtains the certificate of degree."@en .
+<http://www.ontoedsup.org/vocabulary#Titulo> <http://www.w3.org/2000/01/rdf-schema#comment> "Itinerario académico donde se imparten una serie de conceptos. Si la evaluación de estos conceptos es positiva, el alumno obtiene el certificado de título."@es .
+<http://www.ontoedsup.org/vocabulary#Titulo> <http://www.w3.org/2000/01/rdf-schema#label> "Certificate"@en .
+<http://www.ontoedsup.org/vocabulary#Titulo> <http://www.w3.org/2000/01/rdf-schema#label> "Título"@es .
+# 
+# http://www.ontoedsup.org/vocabulary#Universidad
+<http://www.ontoedsup.org/vocabulary#Universidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#Universidad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://www.ontoedsup.org/vocabulary#Universidad> <http://www.w3.org/2000/01/rdf-schema#comment> "Institución donde se imparten cada uno de los títulos de educación superior."@es .
+<http://www.ontoedsup.org/vocabulary#Universidad> <http://www.w3.org/2000/01/rdf-schema#comment> "Institution where each of the higher education degrees are taught."@en .
+<http://www.ontoedsup.org/vocabulary#Universidad> <http://www.w3.org/2000/01/rdf-schema#label> "Universidad"@es .
+<http://www.ontoedsup.org/vocabulary#Universidad> <http://www.w3.org/2000/01/rdf-schema#label> "University"@en .
+# 
+# http://www.ontoedsup.org/vocabulary#1_2_ciclo
+<http://www.ontoedsup.org/vocabulary#1_2_ciclo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontoedsup.org/vocabulary#1_2_ciclo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontoedsup.org/vocabulary#Titulo> .
+<http://www.ontoedsup.org/vocabulary#1_2_ciclo> <http://www.w3.org/2000/01/rdf-schema#comment> "Bachelor's and Master's degrees (subclass). They have in common their structure, since both are composed of a series of subjects encapsulated in courses and semesters."@en .
+<http://www.ontoedsup.org/vocabulary#1_2_ciclo> <http://www.w3.org/2000/01/rdf-schema#comment> "Títulos de grado y máster (subclase). Tienen en común su estructura, ya que ambos se componen de una serie de asignaturas encapsuladas en cursos y semestres."@es .
+<http://www.ontoedsup.org/vocabulary#1_2_ciclo> <http://www.w3.org/2000/01/rdf-schema#label> "1_2_ciclo"@es .
+<http://www.ontoedsup.org/vocabulary#1_2_ciclo> <http://www.w3.org/2000/01/rdf-schema#label> "1_2_cycle"@en .
+# 
+# http://www.w3.org/ns/org#Organization
+# 
+# http://xmlns.com/foaf/0.1/Group
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+_:genid1 <http://xmlns.com/foaf/0.1/mbox> "j.perezmar@posgrado.uimp.es" .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Jesús Pérez" .
+_:genid2 <http://www.w3.org/2002/07/owl#cardinality> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

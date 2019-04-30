@@ -1,0 +1,828 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontoedsup.org/vocabulary#"
+     xml:base="http://www.ontoedsup.org/vocabulary"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.ontoedsup.org/vocabulary">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-03</terms:created>
+        <terms:creator rdf:resource="_:genid2147483664"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="es">Ontología para la Educación Superior</terms:title>
+        <rdfs:comment xml:lang="es">Ontología que contiene los elementos más importantes del esquema de conocimiento referente al entorno de la educación superior</rdfs:comment>
+        <rdfs:label xml:lang="es">Ontología para la Educación Superior</rdfs:label>
+        <owl:versionInfo>0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#cardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#estudiaAsignatura"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Alumno"/>
+        <rdfs:comment xml:lang="es">Relaciona una asignatura con sus alumnos.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a subject to its students.</rdfs:comment>
+        <rdfs:label xml:lang="es">Asignatura estudiada por</rdfs:label>
+        <rdfs:label xml:lang="en">Subject learned by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Profesor"/>
+        <rdfs:comment xml:lang="es">Relaciona una asignatura con un profesor.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a subject with a teacher.</rdfs:comment>
+        <rdfs:label xml:lang="es">Asignatura impartida por</rdfs:label>
+        <rdfs:label xml:lang="en">Subject teached by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#tieneCompetencia"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Competencia"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:comment xml:lang="es">Relaciona una asignatura con una competencia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a subject with a competence.</rdfs:comment>
+        <rdfs:label xml:lang="en">Competence in subject</rdfs:label>
+        <rdfs:label xml:lang="es">Competencia en asignatura</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#coordinaCurso -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#coordinaCurso">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#cursoCoordinado"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Coordinador"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Curso"/>
+        <rdfs:comment xml:lang="es">Relaciona un coordinador con el curso que dirige.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a coordinator with their corresponding course.</rdfs:comment>
+        <rdfs:label xml:lang="es">Coordina curso</rdfs:label>
+        <rdfs:label xml:lang="en">Coordinates course</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#cursoCoordinado -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#cursoCoordinado">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Curso"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Coordinador"/>
+        <rdfs:comment xml:lang="es">Relaciona un curso con un coordinador.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a course with a coordinator.</rdfs:comment>
+        <rdfs:label xml:lang="en">Coordinated course</rdfs:label>
+        <rdfs:label xml:lang="es">Curso coordinado</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#dirigeEscuela -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#dirigeEscuela">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#escuelaDirigida"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Director"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Escuela"/>
+        <rdfs:comment xml:lang="es">Relaciona un director con la escuela en la que ocupa dicho cargo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a director with its school.</rdfs:comment>
+        <rdfs:label xml:lang="es">Dirige escuela</rdfs:label>
+        <rdfs:label xml:lang="en">Heads up school</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#escuelaDirigida -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#escuelaDirigida">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Escuela"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Director"/>
+        <rdfs:comment xml:lang="es">Relaciona una escuela con su director.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a school with its director.</rdfs:comment>
+        <rdfs:label xml:lang="en">Directed school</rdfs:label>
+        <rdfs:label xml:lang="es">Escuela dirigida</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#estudiaAsignatura -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#estudiaAsignatura">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Alumno"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:comment xml:lang="es">Relaciona un alumno con una de las asignaturas en las que está inscrito.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a student with a subject in which is enrolled.</rdfs:comment>
+        <rdfs:label xml:lang="es">Estudia asignatura</rdfs:label>
+        <rdfs:label xml:lang="en">Learns subject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Evaluacion"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:comment xml:lang="es">Relaciona una asignatura con una instancia de método de evaluación.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a subject with an instance of evaluation method.</rdfs:comment>
+        <rdfs:label xml:lang="en">Evaluation method in subject</rdfs:label>
+        <rdfs:label xml:lang="es">Sistema de evaluación en asignatura</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#imparteAsignatura -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#imparteAsignatura">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Profesor"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:comment xml:lang="es">Relaciona un profesor con una asignatura en la que imparte clase.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a teacher with a subject in which teaches.</rdfs:comment>
+        <rdfs:label xml:lang="es">Imparte asignatura</rdfs:label>
+        <rdfs:label xml:lang="en">Teaches subject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#impartidoEn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#impartidoEn">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Titulo"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Escuela"/>
+        <rdfs:comment xml:lang="es">Relaciona una escuela con un título.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a school with a certificate.</rdfs:comment>
+        <rdfs:label xml:lang="es">Impartido en</rdfs:label>
+        <rdfs:label xml:lang="en">Teached in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#materialEnAsignatura -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#materialEnAsignatura">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Material"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:comment xml:lang="es">Relaciona una asignatura con una instancia de material didáctico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a subject with an instance of didactic material.</rdfs:comment>
+        <rdfs:label xml:lang="es">Material en asignatura</rdfs:label>
+        <rdfs:label xml:lang="en">Material in subject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#perteneceACurso -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#perteneceACurso">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Semestre"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Curso"/>
+        <rdfs:comment xml:lang="es">Relaciona un curso con un semestre específico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates course with a specific semester.</rdfs:comment>
+        <rdfs:label xml:lang="en">Belongs to course</rdfs:label>
+        <rdfs:label xml:lang="es">Pertenece a curso</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#perteneceADoctorado -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#perteneceADoctorado">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Tesis"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Doctorado"/>
+        <rdfs:comment xml:lang="es">Relaciona un programa de doctorado con su tesis.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a doctorate program with its thesis.</rdfs:comment>
+        <rdfs:label xml:lang="en">Belongs to doctorate</rdfs:label>
+        <rdfs:label xml:lang="es">Pertenece a doctorado</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#perteneceASemestre -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#perteneceASemestre">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#tieneAsignatura"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Semestre"/>
+        <rdfs:comment xml:lang="es">Relaciona un semestre con uns asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a semester with a subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">Belongs to semester</rdfs:label>
+        <rdfs:label xml:lang="es">Pertenece a semestre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#perteneceATitulo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#perteneceATitulo">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Curso"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Titulo"/>
+        <rdfs:comment xml:lang="es">Relaciona un título con un curso.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a course with a certificate.</rdfs:comment>
+        <rdfs:label xml:lang="en">Belongs to certificate</rdfs:label>
+        <rdfs:label xml:lang="es">Pertenece a título</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#perteneceAUniversidad -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#perteneceAUniversidad">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#tieneEscuela"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Escuela"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Universidad"/>
+        <rdfs:comment xml:lang="es">Relaciona una Universidad con una escuela determinada.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a University with a certain school.</rdfs:comment>
+        <rdfs:label xml:lang="en">Belongs to University</rdfs:label>
+        <rdfs:label xml:lang="es">PerteneceAUniversidad</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tareaEnDoctorado -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tareaEnDoctorado">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Tarea_investigacion"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Doctorado"/>
+        <rdfs:comment xml:lang="es">Relaciona un programa de doctorado con una instancia de tarea de investigación.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a doctorate program with an instance of research task.</rdfs:comment>
+        <rdfs:label xml:lang="es">Tarea en doctorado</rdfs:label>
+        <rdfs:label xml:lang="en">Task in doctorate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneAsignatura -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneAsignatura">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Semestre"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:comment xml:lang="es">Relaciona una asignatura con un semestre que la contiene.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a subject with its semester.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has subject</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene asignatura</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneCompetencia -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneCompetencia">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Competencia"/>
+        <rdfs:comment xml:lang="es">Relaciona una competencia determinada con una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a competence with a subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has competence</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene competencia</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneCurso -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneCurso">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#perteneceATitulo"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Titulo"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Curso"/>
+        <rdfs:comment xml:lang="es">Relaciona cada curso con el título al que pertenece.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a course with their corresponding certificate.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has course</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene curso</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneEscuela -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneEscuela">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Universidad"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Escuela"/>
+        <rdfs:comment xml:lang="es">Relaciona una escuela con la Universidad a la que pertenece.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a school with the University that it belongs.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has school</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene escuela</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneMaterial">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#materialEnAsignatura"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Material"/>
+        <rdfs:comment xml:lang="es">Relaciona una instancia de material didáctico con la asignatura en la que se usa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an instance of didactic material with a certain subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has material</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene material</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneSemestre -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneSemestre">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#perteneceACurso"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Curso"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Semestre"/>
+        <rdfs:comment xml:lang="es">Relaciona un semestre con el curso al que pertenece.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a specific semester with a certain course.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has semester</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene semestre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Evaluacion"/>
+        <rdfs:comment xml:lang="es">Relaciona una instancia de método de evaluación con la asignatura en la que se utiliza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an instance of evaluation method with the subject in which it is used.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has evaluation method</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene sistema de evaluación</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Doctorado"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Tarea_investigacion"/>
+        <rdfs:comment xml:lang="es">Relaciona una instancia de tarea de investigación con el doctorado en el que se desarrolla.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an instance of research task with the doctorate program in which is being performed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has research task</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene tarea de investigación</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneTesis -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneTesis">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#perteneceADoctorado"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Doctorado"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Tesis"/>
+        <rdfs:comment xml:lang="es">Relaciona una tesis con un programa de doctorado al que pertenece.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a thesis with a doctorate program.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has Thesis</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene Tesis</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#tieneTitulo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontoedsup.org/vocabulary#tieneTitulo">
+        <owl:inverseOf rdf:resource="http://www.ontoedsup.org/vocabulary#impartidoEn"/>
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Escuela"/>
+        <rdfs:range rdf:resource="http://www.ontoedsup.org/vocabulary#Titulo"/>
+        <rdfs:comment xml:lang="es">Relaciona un título con la escuela en la que se imparte.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a degree with a school in which is carried out.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has degree</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene Título</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#num_creditos -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ontoedsup.org/vocabulary#num_creditos">
+        <rdfs:domain rdf:resource="http://www.ontoedsup.org/vocabulary#Asignatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="es">Indica el número de créditos que tiene una asignatura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Number of credits that a subject has.</rdfs:comment>
+        <rdfs:label xml:lang="en">Number of credits</rdfs:label>
+        <rdfs:label xml:lang="es">Numero de créditos</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Alumno -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Alumno">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="en">Agent enrolled in several subjects, who seeks to obtain the fixed competences of a particular degree.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Agente inscrito en varias asignaturas, que busca obtener las competencias fijadas de un título en concreto</rdfs:comment>
+        <rdfs:label xml:lang="es">Alumno</rdfs:label>
+        <rdfs:label xml:lang="en">Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Asignatura -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Asignatura">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <rdfs:comment xml:lang="en">Part of a semester, where a set of knowledge, that come specified in the competences, is teached. They use two different type of resources: didactic material and evaluation methods. Their duration is fixed by the number of credits.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Parte de un semestre, donde se imparten una serie de conocimientos que vienen especificados en las competencias. Usan dos recursos bien diferenciados que son el material educativo y los sistemas de evaluación. Su duración viene fijada por el número de créditos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Asignatura</rdfs:label>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Competencia -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Competencia">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="es">Habilidades y/o conocimientos que el título debe reflejar. Se imparten en una o varias asignaturas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Skills and/or knowledge that the title should attest. They are taught in one or several subjects.</rdfs:comment>
+        <rdfs:label xml:lang="es">Competencia</rdfs:label>
+        <rdfs:label xml:lang="en">Competency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Coordinador -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Coordinador">
+        <rdfs:subClassOf rdf:resource="http://www.ontoedsup.org/vocabulary#Profesor"/>
+        <rdfs:comment xml:lang="es">Profesor que además tiene la obligación de asegurar el correcto funcionamiento de un determinado curso.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Teacher who also has to ensure the proper functioning of a particular course.</rdfs:comment>
+        <rdfs:label xml:lang="es">Coordinador</rdfs:label>
+        <rdfs:label xml:lang="en">Coordinator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Curso -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Curso">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">First temporal division of first and second cycle degrees. Corresponds to one year.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Primera división temporal de los títulos de primer y segundo ciclo. Corresponde a un año.</rdfs:comment>
+        <rdfs:label xml:lang="en">Course</rdfs:label>
+        <rdfs:label xml:lang="es">Curso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Director -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Director">
+        <rdfs:subClassOf rdf:resource="http://www.ontoedsup.org/vocabulary#Profesor"/>
+        <rdfs:comment xml:lang="es">Profesor que además tiene la obligación de asegurar el correcto funcionamiento de la escuela.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Teacher who also has to ensure the proper functioning of a school.</rdfs:comment>
+        <rdfs:label xml:lang="en">Director</rdfs:label>
+        <rdfs:label xml:lang="es">Director</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Doctorado -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Doctorado">
+        <rdfs:subClassOf rdf:resource="http://www.ontoedsup.org/vocabulary#Titulo"/>
+        <owl:disjointWith rdf:resource="http://www.ontoedsup.org/vocabulary#1_2_ciclo"/>
+        <rdfs:comment xml:lang="en">Third cycle degree that has a special structure respect to the 1st and 2nd cycle, so it composes a different subclass.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Título de tercer ciclo que tiene una estructura especial respecto a los de 1º y 2º ciclo, por lo que compone otra subclase diferente</rdfs:comment>
+        <rdfs:label xml:lang="es">Doctorado</rdfs:label>
+        <rdfs:label xml:lang="en">Doctoral degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Escuela -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Escuela">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:comment xml:lang="en">A place where a number of specific degrees are taught.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Lugar donde se imparten una serie de títulos determinados.</rdfs:comment>
+        <rdfs:label xml:lang="es">Escuela</rdfs:label>
+        <rdfs:label xml:lang="en">School</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Evaluacion -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Evaluacion">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A method or set of methods that ensures that the student has achieved the proposed competencies.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Método o conjunto de métodos que permite asegurar que el alumno ha conseguido las competencias propuestas</rdfs:comment>
+        <rdfs:label xml:lang="es">Evaluacion</rdfs:label>
+        <rdfs:label xml:lang="en">Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Grado -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Grado">
+        <rdfs:subClassOf rdf:resource="http://www.ontoedsup.org/vocabulary#1_2_ciclo"/>
+        <owl:disjointWith rdf:resource="http://www.ontoedsup.org/vocabulary#Master"/>
+        <rdfs:comment xml:lang="en">First cycle degree, corresponds to the lowest educational step within higher education.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Título de primer ciclo, corresponde a la formación más baja dentro de la educación superior.</rdfs:comment>
+        <rdfs:label xml:lang="en">Degree</rdfs:label>
+        <rdfs:label xml:lang="es">Grado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Master -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Master">
+        <rdfs:subClassOf rdf:resource="http://www.ontoedsup.org/vocabulary#1_2_ciclo"/>
+        <rdfs:comment xml:lang="en">Second cycle degree, with a duration shorter than that a Degree.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Título de segundo ciclo, con duración inferior a la del Grado.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bachelor&apos;s degree</rdfs:label>
+        <rdfs:label xml:lang="es">Máster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Material -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Material">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Any resource that is provided to the student to develop a series of fixed competences.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Todo recurso que se le proporciona al alumno para que desarrolle una serie de competencias fijadas.</rdfs:comment>
+        <rdfs:label xml:lang="en">Didactic material</rdfs:label>
+        <rdfs:label xml:lang="es">Material didáctico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Profesor -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Profesor">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:comment xml:lang="en">Agent in charge of providing educational material and evaluating students in one or more subjects.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Agente encargado de proporcionar material educativo y evaluar a los alumnos de una o varias asignaturas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Profesor</rdfs:label>
+        <rdfs:label xml:lang="en">Teacher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Semestre -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Semestre">
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Second temporal division of first and second cycle degrees. Each course corresponds to two semesters.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Segunda división temporal de los títulos de primer y segundo ciclo. A cada curso le corresponde dos semestres.</rdfs:comment>
+        <rdfs:label xml:lang="en">Semester</rdfs:label>
+        <rdfs:label xml:lang="es">Semestre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Tarea_investigacion -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Tarea_investigacion">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="es">Actividades a realizar a lo largo de un doctorado que están relacionadas con la tesis.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Task to be carried out during a doctorate that are related to the thesis.</rdfs:comment>
+        <rdfs:label xml:lang="en">Research task</rdfs:label>
+        <rdfs:label xml:lang="es">Tarea de investigacion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Tesis -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Tesis">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="es">Trabajo que se realiza a lo largo de un doctorado, en el que se investiga sobre un tema en concreto para sacar conclusiones y resultados de utilidad.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Work carried out during a doctorate, in which a research is carried out on a specific subject in order to draw conclusions and useful results.</rdfs:comment>
+        <rdfs:label xml:lang="es">Tesis</rdfs:label>
+        <rdfs:label xml:lang="en">Thesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Titulo -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Titulo">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Academic itinerary where a series of concepts are taught. If the evaluation of these concepts is positive, the student obtains the certificate of degree.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Itinerario académico donde se imparten una serie de conceptos. Si la evaluación de estos conceptos es positiva, el alumno obtiene el certificado de título.</rdfs:comment>
+        <rdfs:label xml:lang="en">Certificate</rdfs:label>
+        <rdfs:label xml:lang="es">Título</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#Universidad -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#Universidad">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:comment xml:lang="es">Institución donde se imparten cada uno de los títulos de educación superior.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Institution where each of the higher education degrees are taught.</rdfs:comment>
+        <rdfs:label xml:lang="es">Universidad</rdfs:label>
+        <rdfs:label xml:lang="en">University</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoedsup.org/vocabulary#1_2_ciclo -->
+
+
+    <owl:Class rdf:about="http://www.ontoedsup.org/vocabulary#1_2_ciclo">
+        <rdfs:subClassOf rdf:resource="http://www.ontoedsup.org/vocabulary#Titulo"/>
+        <rdfs:comment xml:lang="en">Bachelor&apos;s and Master&apos;s degrees (subclass). They have in common their structure, since both are composed of a series of subjects encapsulated in courses and semesters.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Títulos de grado y máster (subclase). Tienen en común su estructura, ya que ambos se componen de una serie de asignaturas encapsuladas en cursos y semestres.</rdfs:comment>
+        <rdfs:label xml:lang="es">1_2_ciclo</rdfs:label>
+        <rdfs:label xml:lang="en">1_2_cycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:Description rdf:nodeID="genid1">
+        <foaf:mbox>j.perezmar@posgrado.uimp.es</foaf:mbox>
+        <foaf:name>Jesús Pérez</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</owl:cardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

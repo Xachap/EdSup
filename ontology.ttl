@@ -1,0 +1,562 @@
+@prefix : <http://www.ontoedsup.org/vocabulary#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.ontoedsup.org/vocabulary> .
+
+<http://www.ontoedsup.org/vocabulary> rdf:type owl:Ontology ;
+                                       <http://purl.org/dc/terms/created> "2019-04-03"^^xsd:date ;
+                                       <http://purl.org/dc/terms/creator> _:genid2147483664 ;
+                                       <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                       <http://purl.org/dc/terms/title> "Ontología para la Educación Superior"@es ;
+                                       rdfs:comment "Ontología que contiene los elementos más importantes del esquema de conocimiento referente al entorno de la educación superior"@es ;
+                                       rdfs:label "Ontología para la Educación Superior"@es ;
+                                       owl:versionInfo "0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#cardinality
+owl:cardinality rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor
+:asignaturaEstudiadaPor rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :estudiaAsignatura ;
+                        rdfs:domain :Asignatura ;
+                        rdfs:range :Alumno ;
+                        rdfs:comment "Relaciona una asignatura con sus alumnos."@es ,
+                                     "Relates a subject to its students."@en ;
+                        rdfs:label "Asignatura estudiada por"@es ,
+                                   "Subject learned by"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor
+:asignaturaImpartidaPor rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Asignatura ;
+                        rdfs:range :Profesor ;
+                        rdfs:comment "Relaciona una asignatura con un profesor."@es ,
+                                     "Relates a subject with a teacher."@en ;
+                        rdfs:label "Asignatura impartida por"@es ,
+                                   "Subject teached by"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura
+:competenciaEnAsignatura rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :tieneCompetencia ;
+                         rdfs:domain :Competencia ;
+                         rdfs:range :Asignatura ;
+                         rdfs:comment "Relaciona una asignatura con una competencia."@es ,
+                                      "Relates a subject with a competence."@en ;
+                         rdfs:label "Competence in subject"@en ,
+                                    "Competencia en asignatura"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#coordinaCurso
+:coordinaCurso rdf:type owl:ObjectProperty ;
+               owl:inverseOf :cursoCoordinado ;
+               rdfs:domain :Coordinador ;
+               rdfs:range :Curso ;
+               rdfs:comment "Relaciona un coordinador con el curso que dirige."@es ,
+                            "Relates a coordinator with their corresponding course."@en ;
+               rdfs:label "Coordina curso"@es ,
+                          "Coordinates course"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#cursoCoordinado
+:cursoCoordinado rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Curso ;
+                 rdfs:range :Coordinador ;
+                 rdfs:comment "Relaciona un curso con un coordinador."@es ,
+                              "Relates a course with a coordinator."@en ;
+                 rdfs:label "Coordinated course"@en ,
+                            "Curso coordinado"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#dirigeEscuela
+:dirigeEscuela rdf:type owl:ObjectProperty ;
+               owl:inverseOf :escuelaDirigida ;
+               rdfs:domain :Director ;
+               rdfs:range :Escuela ;
+               rdfs:comment "Relaciona un director con la escuela en la que ocupa dicho cargo."@es ,
+                            "Relates a director with its school."@en ;
+               rdfs:label "Dirige escuela"@es ,
+                          "Heads up school"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#escuelaDirigida
+:escuelaDirigida rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Escuela ;
+                 rdfs:range :Director ;
+                 rdfs:comment "Relaciona una escuela con su director."@es ,
+                              "Relates a school with its director."@en ;
+                 rdfs:label "Directed school"@en ,
+                            "Escuela dirigida"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#estudiaAsignatura
+:estudiaAsignatura rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Alumno ;
+                   rdfs:range :Asignatura ;
+                   rdfs:comment "Relaciona un alumno con una de las asignaturas en las que está inscrito."@es ,
+                                "Relates a student with a subject in which is enrolled."@en ;
+                   rdfs:label "Estudia asignatura"@es ,
+                              "Learns subject"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura
+:evaluacionEnAsignatura rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Evaluacion ;
+                        rdfs:range :Asignatura ;
+                        rdfs:comment "Relaciona una asignatura con una instancia de método de evaluación."@es ,
+                                     "Relates a subject with an instance of evaluation method."@en ;
+                        rdfs:label "Evaluation method in subject"@en ,
+                                   "Sistema de evaluación en asignatura"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#imparteAsignatura
+:imparteAsignatura rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :asignaturaImpartidaPor ;
+                   rdfs:domain :Profesor ;
+                   rdfs:range :Asignatura ;
+                   rdfs:comment "Relaciona un profesor con una asignatura en la que imparte clase."@es ,
+                                "Relates a teacher with a subject in which teaches."@en ;
+                   rdfs:label "Imparte asignatura"@es ,
+                              "Teaches subject"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#impartidoEn
+:impartidoEn rdf:type owl:ObjectProperty ;
+             rdfs:domain :Titulo ;
+             rdfs:range :Escuela ;
+             rdfs:comment "Relaciona una escuela con un título."@es ,
+                          "Relates a school with a certificate."@en ;
+             rdfs:label "Impartido en"@es ,
+                        "Teached in"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#materialEnAsignatura
+:materialEnAsignatura rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Material ;
+                      rdfs:range :Asignatura ;
+                      rdfs:comment "Relaciona una asignatura con una instancia de material didáctico."@es ,
+                                   "Relates a subject with an instance of didactic material."@en ;
+                      rdfs:label "Material en asignatura"@es ,
+                                 "Material in subject"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#perteneceACurso
+:perteneceACurso rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Semestre ;
+                 rdfs:range :Curso ;
+                 rdfs:comment "Relaciona un curso con un semestre específico."@es ,
+                              "Relates course with a specific semester."@en ;
+                 rdfs:label "Belongs to course"@en ,
+                            "Pertenece a curso"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#perteneceADoctorado
+:perteneceADoctorado rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Tesis ;
+                     rdfs:range :Doctorado ;
+                     rdfs:comment "Relaciona un programa de doctorado con su tesis."@es ,
+                                  "Relates a doctorate program with its thesis."@en ;
+                     rdfs:label "Belongs to doctorate"@en ,
+                                "Pertenece a doctorado"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#perteneceASemestre
+:perteneceASemestre rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :tieneAsignatura ;
+                    rdfs:domain :Asignatura ;
+                    rdfs:range :Semestre ;
+                    rdfs:comment "Relaciona un semestre con uns asignatura."@es ,
+                                 "Relates a semester with a subject."@en ;
+                    rdfs:label "Belongs to semester"@en ,
+                               "Pertenece a semestre"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#perteneceATitulo
+:perteneceATitulo rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Curso ;
+                  rdfs:range :Titulo ;
+                  rdfs:comment "Relaciona un título con un curso."@es ,
+                               "Relates a course with a certificate."@en ;
+                  rdfs:label "Belongs to certificate"@en ,
+                             "Pertenece a título"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#perteneceAUniversidad
+:perteneceAUniversidad rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :tieneEscuela ;
+                       rdfs:domain :Escuela ;
+                       rdfs:range :Universidad ;
+                       rdfs:comment "Relaciona una Universidad con una escuela determinada."@es ,
+                                    "Relates a University with a certain school."@en ;
+                       rdfs:label "Belongs to University"@en ,
+                                  "PerteneceAUniversidad"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tareaEnDoctorado
+:tareaEnDoctorado rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :tieneTareaInvestigacion ;
+                  rdfs:domain :Tarea_investigacion ;
+                  rdfs:range :Doctorado ;
+                  rdfs:comment "Relaciona un programa de doctorado con una instancia de tarea de investigación."@es ,
+                               "Relates a doctorate program with an instance of research task."@en ;
+                  rdfs:label "Tarea en doctorado"@es ,
+                             "Task in doctorate"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneAsignatura
+:tieneAsignatura rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Semestre ;
+                 rdfs:range :Asignatura ;
+                 rdfs:comment "Relaciona una asignatura con un semestre que la contiene."@es ,
+                              "Relates a subject with its semester."@en ;
+                 rdfs:label "Has subject"@en ,
+                            "Tiene asignatura"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneCompetencia
+:tieneCompetencia rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Asignatura ;
+                  rdfs:range :Competencia ;
+                  rdfs:comment "Relaciona una competencia determinada con una asignatura."@es ,
+                               "Relates a competence with a subject."@en ;
+                  rdfs:label "Has competence"@en ,
+                             "Tiene competencia"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneCurso
+:tieneCurso rdf:type owl:ObjectProperty ;
+            owl:inverseOf :perteneceATitulo ;
+            rdfs:domain :Titulo ;
+            rdfs:range :Curso ;
+            rdfs:comment "Relaciona cada curso con el título al que pertenece."@es ,
+                         "Relates a course with their corresponding certificate."@en ;
+            rdfs:label "Has course"@en ,
+                       "Tiene curso"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneEscuela
+:tieneEscuela rdf:type owl:ObjectProperty ;
+              rdfs:domain :Universidad ;
+              rdfs:range :Escuela ;
+              rdfs:comment "Relaciona una escuela con la Universidad a la que pertenece."@es ,
+                           "Relates a school with the University that it belongs."@en ;
+              rdfs:label "Has school"@en ,
+                         "Tiene escuela"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneMaterial
+:tieneMaterial rdf:type owl:ObjectProperty ;
+               owl:inverseOf :materialEnAsignatura ;
+               rdfs:domain :Asignatura ;
+               rdfs:range :Material ;
+               rdfs:comment "Relaciona una instancia de material didáctico con la asignatura en la que se usa."@es ,
+                            "Relates an instance of didactic material with a certain subject."@en ;
+               rdfs:label "Has material"@en ,
+                          "Tiene material"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneSemestre
+:tieneSemestre rdf:type owl:ObjectProperty ;
+               owl:inverseOf :perteneceACurso ;
+               rdfs:domain :Curso ;
+               rdfs:range :Semestre ;
+               rdfs:comment "Relaciona un semestre con el curso al que pertenece."@es ,
+                            "Relates a specific semester with a certain course."@en ;
+               rdfs:label "Has semester"@en ,
+                          "Tiene semestre"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion
+:tieneSistemaEvaluacion rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :evaluacionEnAsignatura ;
+                        rdfs:domain :Asignatura ;
+                        rdfs:range :Evaluacion ;
+                        rdfs:comment "Relaciona una instancia de método de evaluación con la asignatura en la que se utiliza."@es ,
+                                     "Relates an instance of evaluation method with the subject in which it is used."@en ;
+                        rdfs:label "Has evaluation method"@en ,
+                                   "Tiene sistema de evaluación"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion
+:tieneTareaInvestigacion rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Doctorado ;
+                         rdfs:range :Tarea_investigacion ;
+                         rdfs:comment "Relaciona una instancia de tarea de investigación con el doctorado en el que se desarrolla."@es ,
+                                      "Relates an instance of research task with the doctorate program in which is being performed."@en ;
+                         rdfs:label "Has research task"@en ,
+                                    "Tiene tarea de investigación"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneTesis
+:tieneTesis rdf:type owl:ObjectProperty ;
+            owl:inverseOf :perteneceADoctorado ;
+            rdfs:domain :Doctorado ;
+            rdfs:range :Tesis ;
+            rdfs:comment "Relaciona una tesis con un programa de doctorado al que pertenece."@es ,
+                         "Relates a thesis with a doctorate program."@en ;
+            rdfs:label "Has Thesis"@en ,
+                       "Tiene Tesis"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#tieneTitulo
+:tieneTitulo rdf:type owl:ObjectProperty ;
+             owl:inverseOf :impartidoEn ;
+             rdfs:domain :Escuela ;
+             rdfs:range :Titulo ;
+             rdfs:comment "Relaciona un título con la escuela en la que se imparte."@es ,
+                          "Relates a degree with a school in which is carried out."@en ;
+             rdfs:label "Has degree"@en ,
+                        "Tiene Título"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ontoedsup.org/vocabulary#num_creditos
+:num_creditos rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Asignatura ;
+              rdfs:range xsd:double ;
+              rdfs:comment "Indica el número de créditos que tiene una asignatura."@es ,
+                           "Number of credits that a subject has."@en ;
+              rdfs:label "Number of credits"@en ,
+                         "Numero de créditos"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
+
+
+###  http://www.ontoedsup.org/vocabulary#Alumno
+:Alumno rdf:type owl:Class ;
+        rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+        rdfs:comment "Agent enrolled in several subjects, who seeks to obtain the fixed competences of a particular degree."@en ,
+                     "Agente inscrito en varias asignaturas, que busca obtener las competencias fijadas de un título en concreto"@es ;
+        rdfs:label "Alumno"@es ,
+                   "Student"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#Asignatura
+:Asignatura rdf:type owl:Class ;
+            rdfs:subClassOf <http://xmlns.com/foaf/0.1/Group> ;
+            rdfs:comment "Part of a semester, where a set of knowledge, that come specified in the competences, is teached. They use two different type of resources: didactic material and evaluation methods. Their duration is fixed by the number of credits."@en ,
+                         "Parte de un semestre, donde se imparten una serie de conocimientos que vienen especificados en las competencias. Usan dos recursos bien diferenciados que son el material educativo y los sistemas de evaluación. Su duración viene fijada por el número de créditos."@es ;
+            rdfs:label "Asignatura"@es ,
+                       "Subject"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#Competencia
+:Competencia rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing ;
+             rdfs:comment "Habilidades y/o conocimientos que el título debe reflejar. Se imparten en una o varias asignaturas."@es ,
+                          "Skills and/or knowledge that the title should attest. They are taught in one or several subjects."@en ;
+             rdfs:label "Competencia"@es ,
+                        "Competency"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#Coordinador
+:Coordinador rdf:type owl:Class ;
+             rdfs:subClassOf :Profesor ;
+             rdfs:comment "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de un determinado curso."@es ,
+                          "Teacher who also has to ensure the proper functioning of a particular course."@en ;
+             rdfs:label "Coordinador"@es ,
+                        "Coordinator"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#Curso
+:Curso rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing ;
+       rdfs:comment "First temporal division of first and second cycle degrees. Corresponds to one year."@en ,
+                    "Primera división temporal de los títulos de primer y segundo ciclo. Corresponde a un año."@es ;
+       rdfs:label "Course"@en ,
+                  "Curso"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Profesor ;
+          rdfs:comment "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de la escuela."@es ,
+                       "Teacher who also has to ensure the proper functioning of a school."@en ;
+          rdfs:label "Director"@en ,
+                     "Director"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#Doctorado
+:Doctorado rdf:type owl:Class ;
+           rdfs:subClassOf :Titulo ;
+           owl:disjointWith <http://www.ontoedsup.org/vocabulary#1_2_ciclo> ;
+           rdfs:comment "Third cycle degree that has a special structure respect to the 1st and 2nd cycle, so it composes a different subclass."@en ,
+                        "Título de tercer ciclo que tiene una estructura especial respecto a los de 1º y 2º ciclo, por lo que compone otra subclase diferente"@es ;
+           rdfs:label "Doctorado"@es ,
+                      "Doctoral degree"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#Escuela
+:Escuela rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/ns/org#Organization> ;
+         rdfs:comment "A place where a number of specific degrees are taught."@en ,
+                      "Lugar donde se imparten una serie de títulos determinados."@es ;
+         rdfs:label "Escuela"@es ,
+                    "School"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#Evaluacion
+:Evaluacion rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing ;
+            rdfs:comment "A method or set of methods that ensures that the student has achieved the proposed competencies."@en ,
+                         "Método o conjunto de métodos que permite asegurar que el alumno ha conseguido las competencias propuestas"@es ;
+            rdfs:label "Evaluacion"@es ,
+                       "Evaluation"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#Grado
+:Grado rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.ontoedsup.org/vocabulary#1_2_ciclo> ;
+       owl:disjointWith :Master ;
+       rdfs:comment "First cycle degree, corresponds to the lowest educational step within higher education."@en ,
+                    "Título de primer ciclo, corresponde a la formación más baja dentro de la educación superior."@es ;
+       rdfs:label "Degree"@en ,
+                  "Grado"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#Master
+:Master rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.ontoedsup.org/vocabulary#1_2_ciclo> ;
+        rdfs:comment "Second cycle degree, with a duration shorter than that a Degree."@en ,
+                     "Título de segundo ciclo, con duración inferior a la del Grado."@es ;
+        rdfs:label "Bachelor's degree"@en ,
+                   "Máster"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ;
+          rdfs:comment "Any resource that is provided to the student to develop a series of fixed competences."@en ,
+                       "Todo recurso que se le proporciona al alumno para que desarrolle una serie de competencias fijadas."@es ;
+          rdfs:label "Didactic material"@en ,
+                     "Material didáctico"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#Profesor
+:Profesor rdf:type owl:Class ;
+          rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+          rdfs:comment "Agent in charge of providing educational material and evaluating students in one or more subjects."@en ,
+                       "Agente encargado de proporcionar material educativo y evaluar a los alumnos de una o varias asignaturas."@es ;
+          rdfs:label "Profesor"@es ,
+                     "Teacher"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#Semestre
+:Semestre rdf:type owl:Class ;
+          rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error2> ,
+                          owl:Thing ;
+          rdfs:comment "Second temporal division of first and second cycle degrees. Each course corresponds to two semesters."@en ,
+                       "Segunda división temporal de los títulos de primer y segundo ciclo. A cada curso le corresponde dos semestres."@es ;
+          rdfs:label "Semester"@en ,
+                     "Semestre"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#Tarea_investigacion
+:Tarea_investigacion rdf:type owl:Class ;
+                     rdfs:subClassOf owl:Thing ;
+                     rdfs:comment "Actividades a realizar a lo largo de un doctorado que están relacionadas con la tesis."@es ,
+                                  "Task to be carried out during a doctorate that are related to the thesis."@en ;
+                     rdfs:label "Research task"@en ,
+                                "Tarea de investigacion"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#Tesis
+:Tesis rdf:type owl:Class ;
+       rdfs:subClassOf owl:Thing ;
+       rdfs:comment "Trabajo que se realiza a lo largo de un doctorado, en el que se investiga sobre un tema en concreto para sacar conclusiones y resultados de utilidad."@es ,
+                    "Work carried out during a doctorate, in which a research is carried out on a specific subject in order to draw conclusions and useful results."@en ;
+       rdfs:label "Tesis"@es ,
+                  "Thesis"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#Titulo
+:Titulo rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        rdfs:comment "Academic itinerary where a series of concepts are taught. If the evaluation of these concepts is positive, the student obtains the certificate of degree."@en ,
+                     "Itinerario académico donde se imparten una serie de conceptos. Si la evaluación de estos conceptos es positiva, el alumno obtiene el certificado de título."@es ;
+        rdfs:label "Certificate"@en ,
+                   "Título"@es .
+
+
+###  http://www.ontoedsup.org/vocabulary#Universidad
+:Universidad rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/org#Organization> ;
+             rdfs:comment "Institución donde se imparten cada uno de los títulos de educación superior."@es ,
+                          "Institution where each of the higher education degrees are taught."@en ;
+             rdfs:label "Universidad"@es ,
+                        "University"@en .
+
+
+###  http://www.ontoedsup.org/vocabulary#1_2_ciclo
+<http://www.ontoedsup.org/vocabulary#1_2_ciclo> rdf:type owl:Class ;
+                                                rdfs:subClassOf :Titulo ;
+                                                rdfs:comment "Bachelor's and Master's degrees (subclass). They have in common their structure, since both are composed of a series of subjects encapsulated in courses and semesters."@en ,
+                                                             "Títulos de grado y máster (subclase). Tienen en común su estructura, ya que ambos se componen de una serie de asignaturas encapsuladas en cursos y semestres."@es ;
+                                                rdfs:label "1_2_ciclo"@es ,
+                                                           "1_2_cycle"@en .
+
+
+###  http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Group
+<http://xmlns.com/foaf/0.1/Group> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+_:genid1 <http://xmlns.com/foaf/0.1/mbox> "j.perezmar@posgrado.uimp.es" ;
+         <http://xmlns.com/foaf/0.1/name> "Jesús Pérez" .
+
+[ owl:cardinality "2"^^xsd:int
+ ] .
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1141 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.ontoedsup.org/vocabulary", "http://www.w3.org/ns/org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://org.semanticweb.owlapi/error", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "es" : "Ontologia para la Educacion Superior",
+	  "en" : "Ontology for College Education"
+    },
+    "iri" : "http://www.ontoedsup.org/vocabulary",
+    "version" : "0.1",
+    "author" : [ "Jesus Perez" ],
+    "labels" : {
+      "es" : "Ontología para la Educación Superior"
+    },
+    "comments" : {
+      "es" : "Ontología que contiene los elementos más importantes del esquema de conocimiento referente al entorno de la educación superior",
+	  "en" : "Ontology that contains the most important elements of the knowledge scheme concerning the environment of college education in Spain."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Jesus Perez",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-04-03",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "Ontologia para la Educacion Superior",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 24,
+    "objectPropertyCount" : 28,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Semestre",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Semestre",
+      "en" : "Semester",
+      "es" : "Semestre"
+    },
+    "comment" : {
+      "en" : "Second temporal division of first and second cycle degrees. Each course corresponds to two semesters.",
+      "es" : "Segunda división temporal de los títulos de primer y segundo ciclo. A cada curso le corresponde dos semestres."
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Competencia",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Competencia",
+      "en" : "Competency",
+      "es" : "Competencia"
+    },
+    "comment" : {
+      "en" : "Skills and/or knowledge that the title should attest. They are taught in one or several subjects.",
+      "es" : "Habilidades y/o conocimientos que el título debe reflejar. Se imparten en una o varias asignaturas."
+    },
+    "id" : "9"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Universidad",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Universidad",
+      "en" : "University",
+      "es" : "Universidad"
+    },
+    "comment" : {
+      "en" : "Institution where each of the higher education degrees are taught.",
+      "es" : "Institución donde se imparten cada uno de los títulos de educación superior."
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://org.semanticweb.owlapi/error#Error2",
+    "baseIri" : "http://org.semanticweb.owlapi/error",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error2"
+    },
+    "subClasses" : [ "7" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Alumno",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Alumno",
+      "en" : "Student",
+      "es" : "Alumno"
+    },
+    "comment" : {
+      "en" : "Agent enrolled in several subjects, who seeks to obtain the fixed competences of a particular degree.",
+      "es" : "Agente inscrito en varias asignaturas, que busca obtener las competencias fijadas de un título en concreto"
+    },
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Tarea_investigacion",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tarea_investigacion",
+      "en" : "Research task",
+      "es" : "Tarea de investigacion"
+    },
+    "comment" : {
+      "en" : "Task to be carried out during a doctorate that are related to the thesis.",
+      "es" : "Actividades a realizar a lo largo de un doctorado que están relacionadas con la tesis."
+    },
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/ns/org#Organization",
+    "baseIri" : "http://www.w3.org/ns/org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "1", "10" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Titulo",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Titulo",
+      "en" : "Certificate",
+      "es" : "Título"
+    },
+    "subClasses" : [ "28", "29" ],
+    "comment" : {
+      "en" : "Academic itinerary where a series of concepts are taught. If the evaluation of these concepts is positive, the student obtains the certificate of degree.",
+      "es" : "Itinerario académico donde se imparten una serie de conceptos. Si la evaluación de estos conceptos es positiva, el alumno obtiene el certificado de título."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Director",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Director",
+      "en" : "Director",
+      "es" : "Director"
+    },
+    "comment" : {
+      "en" : "Teacher who also has to ensure the proper functioning of a school.",
+      "es" : "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de la escuela."
+    },
+    "id" : "31",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Profesor",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Profesor",
+      "en" : "Teacher",
+      "es" : "Profesor"
+    },
+    "subClasses" : [ "20", "31" ],
+    "comment" : {
+      "en" : "Agent in charge of providing educational material and evaluating students in one or more subjects.",
+      "es" : "Agente encargado de proporcionar material educativo y evaluar a los alumnos de una o varias asignaturas."
+    },
+    "id" : "17",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "17", "25" ],
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Doctorado",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Doctorado",
+      "en" : "Doctoral degree",
+      "es" : "Doctorado"
+    },
+    "comment" : {
+      "en" : "Third cycle degree that has a special structure respect to the 1st and 2nd cycle, so it composes a different subclass.",
+      "es" : "Título de tercer ciclo que tiene una estructura especial respecto a los de 1º y 2º ciclo, por lo que compone otra subclase diferente"
+    },
+    "id" : "29",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Asignatura",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asignatura",
+      "en" : "Subject",
+      "es" : "Asignatura"
+    },
+    "comment" : {
+      "en" : "Part of a semester, where a set of knowledge, that come specified in the competences, is teached. They use two different type of resources: didactic material and evaluation methods. Their duration is fixed by the number of credits.",
+      "es" : "Parte de un semestre, donde se imparten una serie de conocimientos que vienen especificados en las competencias. Usan dos recursos bien diferenciados que son el material educativo y los sistemas de evaluación. Su duración viene fijada por el número de créditos."
+    },
+    "id" : "13",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Escuela",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Escuela",
+      "en" : "School",
+      "es" : "Escuela"
+    },
+    "comment" : {
+      "en" : "A place where a number of specific degrees are taught.",
+      "es" : "Lugar donde se imparten una serie de títulos determinados."
+    },
+    "id" : "1",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Coordinador",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coordinador",
+      "en" : "Coordinator",
+      "es" : "Coordinador"
+    },
+    "comment" : {
+      "en" : "Teacher who also has to ensure the proper functioning of a particular course.",
+      "es" : "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de un determinado curso."
+    },
+    "id" : "20",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Curso",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Curso",
+      "en" : "Course",
+      "es" : "Curso"
+    },
+    "comment" : {
+      "en" : "First temporal division of first and second cycle degrees. Corresponds to one year.",
+      "es" : "Primera división temporal de los títulos de primer y segundo ciclo. Corresponde a un año."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#1_2_ciclo",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "1_2_ciclo",
+      "en" : "1_2_cycle",
+      "es" : "1_2_ciclo"
+    },
+    "subClasses" : [ "40", "36" ],
+    "comment" : {
+      "en" : "Bachelor's and Master's degrees (subclass). They have in common their structure, since both are composed of a series of subjects encapsulated in courses and semesters.",
+      "es" : "Títulos de grado y máster (subclase). Tienen en común su estructura, ya que ambos se componen de una serie de asignaturas encapsuladas en cursos y semestres."
+    },
+    "id" : "28",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Material",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material",
+      "en" : "Didactic material",
+      "es" : "Material didáctico"
+    },
+    "comment" : {
+      "en" : "Any resource that is provided to the student to develop a series of fixed competences.",
+      "es" : "Todo recurso que se le proporciona al alumno para que desarrolle una serie de competencias fijadas."
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Master",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Master",
+      "en" : "Bachelor's degree",
+      "es" : "Máster"
+    },
+    "comment" : {
+      "en" : "Second cycle degree, with a duration shorter than that a Degree.",
+      "es" : "Título de segundo ciclo, con duración inferior a la del Grado."
+    },
+    "id" : "36",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Evaluacion",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Evaluacion",
+      "en" : "Evaluation",
+      "es" : "Evaluacion"
+    },
+    "comment" : {
+      "en" : "A method or set of methods that ensures that the student has achieved the proposed competencies.",
+      "es" : "Método o conjunto de métodos que permite asegurar que el alumno ha conseguido las competencias propuestas"
+    },
+    "id" : "14"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Tesis",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tesis",
+      "en" : "Thesis",
+      "es" : "Tesis"
+    },
+    "comment" : {
+      "en" : "Work carried out during a doctorate, in which a research is carried out on a specific subject in order to draw conclusions and useful results.",
+      "es" : "Trabajo que se realiza a lo largo de un doctorado, en el que se investiga sobre un tema en concreto para sacar conclusiones y resultados de utilidad."
+    },
+    "id" : "62"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#Grado",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Grado",
+      "en" : "Degree",
+      "es" : "Grado"
+    },
+    "comment" : {
+      "en" : "First cycle degree, corresponds to the lowest educational step within higher education.",
+      "es" : "Título de primer ciclo, corresponde a la formación más baja dentro de la educación superior."
+    },
+    "id" : "40",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Group",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group"
+    },
+    "subClasses" : [ "13" ],
+    "attributes" : [ "external" ],
+    "id" : "34"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneTitulo",
+    "inverse" : "3",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "tieneTitulo",
+      "en" : "Has degree",
+      "es" : "Tiene Título"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates a degree with a school in which is carried out.",
+      "es" : "Relaciona un título con la escuela en la que se imparte."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneCurso",
+    "inverse" : "6",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "tieneCurso",
+      "en" : "Has course",
+      "es" : "Tiene curso"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Relates a course with their corresponding certificate.",
+      "es" : "Relaciona cada curso con el título al que pertenece."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion",
+    "inverse" : "15",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "tieneSistemaEvaluacion",
+      "en" : "Has evaluation method",
+      "es" : "Tiene sistema de evaluación"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Relates an instance of evaluation method with the subject in which it is used.",
+      "es" : "Relaciona una instancia de método de evaluación con la asignatura en la que se utiliza."
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#imparteAsignatura",
+    "inverse" : "18",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "imparteAsignatura",
+      "en" : "Teaches subject",
+      "es" : "Imparte asignatura"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Relates a teacher with a subject in which teaches.",
+      "es" : "Relaciona un profesor con una asignatura en la que imparte clase."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#coordinaCurso",
+    "inverse" : "21",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "coordinaCurso",
+      "en" : "Coordinates course",
+      "es" : "Coordina curso"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Relates a coordinator with their corresponding course.",
+      "es" : "Relaciona un coordinador con el curso que dirige."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneMaterial",
+    "inverse" : "24",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "tieneMaterial",
+      "en" : "Has material",
+      "es" : "Tiene material"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Relates an instance of didactic material with a certain subject.",
+      "es" : "Relaciona una instancia de material didáctico con la asignatura en la que se usa."
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#perteneceACurso",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "perteneceACurso",
+      "en" : "Belongs to course",
+      "es" : "Pertenece a curso"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Relates course with a specific semester.",
+      "es" : "Relaciona un curso con un semestre específico."
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "evaluacionEnAsignatura",
+      "en" : "Evaluation method in subject",
+      "es" : "Sistema de evaluación en asignatura"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Relates a subject with an instance of evaluation method.",
+      "es" : "Relaciona una asignatura con una instancia de método de evaluación."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "tieneTareaInvestigacion",
+      "en" : "Has research task",
+      "es" : "Tiene tarea de investigación"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Relates an instance of research task with the doctorate program in which is being performed.",
+      "es" : "Relaciona una instancia de tarea de investigación con el doctorado en el que se desarrolla."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "range" : "34",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "28",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneEscuela",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "tieneEscuela",
+      "en" : "Has school",
+      "es" : "Tiene escuela"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Relates a school with the University that it belongs.",
+      "es" : "Relaciona una escuela con la Universidad a la que pertenece."
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "range" : "26",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "28",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#perteneceAUniversidad",
+    "inverse" : "37",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "perteneceAUniversidad",
+      "en" : "Belongs to University",
+      "es" : "PerteneceAUniversidad"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates a University with a certain school.",
+      "es" : "Relaciona una Universidad con una escuela determinada."
+    },
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor",
+    "inverse" : "44",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "asignaturaEstudiadaPor",
+      "en" : "Subject learned by",
+      "es" : "Asignatura estudiada por"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Relates a subject to its students.",
+      "es" : "Relaciona una asignatura con sus alumnos."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura",
+    "inverse" : "46",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "competenciaEnAsignatura",
+      "en" : "Competence in subject",
+      "es" : "Competencia en asignatura"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Relates a subject with a competence.",
+      "es" : "Relaciona una asignatura con una competencia."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tareaEnDoctorado",
+    "inverse" : "32",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "tareaEnDoctorado",
+      "en" : "Task in doctorate",
+      "es" : "Tarea en doctorado"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Relates a doctorate program with an instance of research task.",
+      "es" : "Relaciona un programa de doctorado con una instancia de tarea de investigación."
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#dirigeEscuela",
+    "inverse" : "53",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "dirigeEscuela",
+      "en" : "Heads up school",
+      "es" : "Dirige escuela"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Relates a director with its school.",
+      "es" : "Relaciona un director con la escuela en la que ocupa dicho cargo."
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "range" : "2",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "2",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "17",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "17",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneSemestre",
+    "inverse" : "30",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "tieneSemestre",
+      "en" : "Has semester",
+      "es" : "Tiene semestre"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Relates a specific semester with a certain course.",
+      "es" : "Relaciona un semestre con el curso al que pertenece."
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#perteneceATitulo",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "perteneceATitulo",
+      "en" : "Belongs to certificate",
+      "es" : "Pertenece a título"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Relates a course with a certificate.",
+      "es" : "Relaciona un título con un curso."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "range" : "28",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "36",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneCompetencia",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "tieneCompetencia",
+      "en" : "Has competence",
+      "es" : "Tiene competencia"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Relates a competence with a subject.",
+      "es" : "Relaciona una competencia determinada con una asignatura."
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneTesis",
+    "inverse" : "63",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "tieneTesis",
+      "en" : "Has Thesis",
+      "es" : "Tiene Tesis"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Relates a thesis with a doctorate program.",
+      "es" : "Relaciona una tesis con un programa de doctorado al que pertenece."
+    },
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#impartidoEn",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "impartidoEn",
+      "en" : "Teached in",
+      "es" : "Impartido en"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Relates a school with a certificate.",
+      "es" : "Relaciona una escuela con un título."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#estudiaAsignatura",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "estudiaAsignatura",
+      "en" : "Learns subject",
+      "es" : "Estudia asignatura"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "Relates a student with a subject in which is enrolled.",
+      "es" : "Relaciona un alumno con una de las asignaturas en las que está inscrito."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#perteneceASemestre",
+    "inverse" : "65",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "perteneceASemestre",
+      "en" : "Belongs to semester",
+      "es" : "Pertenece a semestre"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Relates a semester with a subject.",
+      "es" : "Relaciona un semestre con uns asignatura."
+    },
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#tieneAsignatura",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "tieneAsignatura",
+      "en" : "Has subject",
+      "es" : "Tiene asignatura"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Relates a subject with its semester.",
+      "es" : "Relaciona una asignatura con un semestre que la contiene."
+    },
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#cursoCoordinado",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "cursoCoordinado",
+      "en" : "Coordinated course",
+      "es" : "Curso coordinado"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Relates a course with a coordinator.",
+      "es" : "Relaciona un curso con un coordinador."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "asignaturaImpartidaPor",
+      "en" : "Subject teached by",
+      "es" : "Asignatura impartida por"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Relates a subject with a teacher.",
+      "es" : "Relaciona una asignatura con un profesor."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#escuelaDirigida",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "escuelaDirigida",
+      "en" : "Directed school",
+      "es" : "Escuela dirigida"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relates a school with its director.",
+      "es" : "Relaciona una escuela con su director."
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#num_creditos",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "num_creditos",
+      "en" : "Number of credits",
+      "es" : "Numero de créditos"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Number of credits that a subject has.",
+      "es" : "Indica el número de créditos que tiene una asignatura."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#perteneceADoctorado",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "perteneceADoctorado",
+      "en" : "Belongs to doctorate",
+      "es" : "Pertenece a doctorado"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "Relates a doctorate program with its thesis.",
+      "es" : "Relaciona un programa de doctorado con su tesis."
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.ontoedsup.org/vocabulary#materialEnAsignatura",
+    "baseIri" : "http://www.ontoedsup.org/vocabulary",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "materialEnAsignatura",
+      "en" : "Material in subject",
+      "es" : "Material en asignatura"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Relates a subject with an instance of didactic material.",
+      "es" : "Relaciona una asignatura con una instancia de material didáctico."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  } ]
+}

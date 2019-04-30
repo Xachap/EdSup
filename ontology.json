@@ -1,0 +1,1173 @@
+[ {
+  "@id" : "_:genid1",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "j.perezmar@posgrado.uimp.es"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Jesús Pérez"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "2"
+  } ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-04-03"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid2147483664"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "es",
+    "@value" : "Ontología para la Educación Superior"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ontología que contiene los elementos más importantes del esquema de conocimiento referente al entorno de la educación superior"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Ontología para la Educación Superior"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#1_2_ciclo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Bachelor's and Master's degrees (subclass). They have in common their structure, since both are composed of a series of subjects encapsulated in courses and semesters."
+  }, {
+    "@language" : "es",
+    "@value" : "Títulos de grado y máster (subclase). Tienen en común su estructura, ya que ambos se componen de una serie de asignaturas encapsuladas en cursos y semestres."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "1_2_ciclo"
+  }, {
+    "@language" : "en",
+    "@value" : "1_2_cycle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Alumno",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Agent enrolled in several subjects, who seeks to obtain the fixed competences of a particular degree."
+  }, {
+    "@language" : "es",
+    "@value" : "Agente inscrito en varias asignaturas, que busca obtener las competencias fijadas de un título en concreto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Alumno"
+  }, {
+    "@language" : "en",
+    "@value" : "Student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Part of a semester, where a set of knowledge, that come specified in the competences, is teached. They use two different type of resources: didactic material and evaluation methods. Their duration is fixed by the number of credits."
+  }, {
+    "@language" : "es",
+    "@value" : "Parte de un semestre, donde se imparten una serie de conocimientos que vienen especificados en las competencias. Usan dos recursos bien diferenciados que son el material educativo y los sistemas de evaluación. Su duración viene fijada por el número de créditos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Asignatura"
+  }, {
+    "@language" : "en",
+    "@value" : "Subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Group"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Competencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Habilidades y/o conocimientos que el título debe reflejar. Se imparten en una o varias asignaturas."
+  }, {
+    "@language" : "en",
+    "@value" : "Skills and/or knowledge that the title should attest. They are taught in one or several subjects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Competencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Competency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Coordinador",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de un determinado curso."
+  }, {
+    "@language" : "en",
+    "@value" : "Teacher who also has to ensure the proper functioning of a particular course."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Coordinador"
+  }, {
+    "@language" : "en",
+    "@value" : "Coordinator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Profesor"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Curso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First temporal division of first and second cycle degrees. Corresponds to one year."
+  }, {
+    "@language" : "es",
+    "@value" : "Primera división temporal de los títulos de primer y segundo ciclo. Corresponde a un año."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Course"
+  }, {
+    "@language" : "es",
+    "@value" : "Curso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de la escuela."
+  }, {
+    "@language" : "en",
+    "@value" : "Teacher who also has to ensure the proper functioning of a school."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Director"
+  }, {
+    "@language" : "es",
+    "@value" : "Director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Profesor"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Third cycle degree that has a special structure respect to the 1st and 2nd cycle, so it composes a different subclass."
+  }, {
+    "@language" : "es",
+    "@value" : "Título de tercer ciclo que tiene una estructura especial respecto a los de 1º y 2º ciclo, por lo que compone otra subclase diferente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Doctorado"
+  }, {
+    "@language" : "en",
+    "@value" : "Doctoral degree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#1_2_ciclo"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Escuela",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A place where a number of specific degrees are taught."
+  }, {
+    "@language" : "es",
+    "@value" : "Lugar donde se imparten una serie de títulos determinados."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Escuela"
+  }, {
+    "@language" : "en",
+    "@value" : "School"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/org#Organization"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Evaluacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A method or set of methods that ensures that the student has achieved the proposed competencies."
+  }, {
+    "@language" : "es",
+    "@value" : "Método o conjunto de métodos que permite asegurar que el alumno ha conseguido las competencias propuestas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Evaluacion"
+  }, {
+    "@language" : "en",
+    "@value" : "Evaluation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Grado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First cycle degree, corresponds to the lowest educational step within higher education."
+  }, {
+    "@language" : "es",
+    "@value" : "Título de primer ciclo, corresponde a la formación más baja dentro de la educación superior."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Degree"
+  }, {
+    "@language" : "es",
+    "@value" : "Grado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#1_2_ciclo"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Master"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Master",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Second cycle degree, with a duration shorter than that a Degree."
+  }, {
+    "@language" : "es",
+    "@value" : "Título de segundo ciclo, con duración inferior a la del Grado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bachelor's degree"
+  }, {
+    "@language" : "es",
+    "@value" : "Máster"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#1_2_ciclo"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any resource that is provided to the student to develop a series of fixed competences."
+  }, {
+    "@language" : "es",
+    "@value" : "Todo recurso que se le proporciona al alumno para que desarrolle una serie de competencias fijadas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Didactic material"
+  }, {
+    "@language" : "es",
+    "@value" : "Material didáctico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Profesor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Agent in charge of providing educational material and evaluating students in one or more subjects."
+  }, {
+    "@language" : "es",
+    "@value" : "Agente encargado de proporcionar material educativo y evaluar a los alumnos de una o varias asignaturas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Profesor"
+  }, {
+    "@language" : "en",
+    "@value" : "Teacher"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Semestre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Second temporal division of first and second cycle degrees. Each course corresponds to two semesters."
+  }, {
+    "@language" : "es",
+    "@value" : "Segunda división temporal de los títulos de primer y segundo ciclo. A cada curso le corresponde dos semestres."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Semester"
+  }, {
+    "@language" : "es",
+    "@value" : "Semestre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error2"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Tarea_investigacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Actividades a realizar a lo largo de un doctorado que están relacionadas con la tesis."
+  }, {
+    "@language" : "en",
+    "@value" : "Task to be carried out during a doctorate that are related to the thesis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Research task"
+  }, {
+    "@language" : "es",
+    "@value" : "Tarea de investigacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Tesis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Trabajo que se realiza a lo largo de un doctorado, en el que se investiga sobre un tema en concreto para sacar conclusiones y resultados de utilidad."
+  }, {
+    "@language" : "en",
+    "@value" : "Work carried out during a doctorate, in which a research is carried out on a specific subject in order to draw conclusions and useful results."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tesis"
+  }, {
+    "@language" : "en",
+    "@value" : "Thesis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Titulo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Academic itinerary where a series of concepts are taught. If the evaluation of these concepts is positive, the student obtains the certificate of degree."
+  }, {
+    "@language" : "es",
+    "@value" : "Itinerario académico donde se imparten una serie de conceptos. Si la evaluación de estos conceptos es positiva, el alumno obtiene el certificado de título."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Certificate"
+  }, {
+    "@language" : "es",
+    "@value" : "Título"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#Universidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Institución donde se imparten cada uno de los títulos de educación superior."
+  }, {
+    "@language" : "en",
+    "@value" : "Institution where each of the higher education degrees are taught."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Universidad"
+  }, {
+    "@language" : "en",
+    "@value" : "University"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/org#Organization"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una asignatura con sus alumnos."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a subject to its students."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Asignatura estudiada por"
+  }, {
+    "@language" : "en",
+    "@value" : "Subject learned by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Alumno"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#estudiaAsignatura"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una asignatura con un profesor."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a subject with a teacher."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Asignatura impartida por"
+  }, {
+    "@language" : "en",
+    "@value" : "Subject teached by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Profesor"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una asignatura con una competencia."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a subject with a competence."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Competencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Competence in subject"
+  }, {
+    "@language" : "es",
+    "@value" : "Competencia en asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#tieneCompetencia"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#coordinaCurso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un coordinador con el curso que dirige."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a coordinator with their corresponding course."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Coordinador"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Coordina curso"
+  }, {
+    "@language" : "en",
+    "@value" : "Coordinates course"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#cursoCoordinado"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#cursoCoordinado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un curso con un coordinador."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a course with a coordinator."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Coordinated course"
+  }, {
+    "@language" : "es",
+    "@value" : "Curso coordinado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Coordinador"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#dirigeEscuela",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un director con la escuela en la que ocupa dicho cargo."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a director with its school."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dirige escuela"
+  }, {
+    "@language" : "en",
+    "@value" : "Heads up school"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#escuelaDirigida"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#escuelaDirigida",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una escuela con su director."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a school with its director."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Directed school"
+  }, {
+    "@language" : "es",
+    "@value" : "Escuela dirigida"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Director"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#estudiaAsignatura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un alumno con una de las asignaturas en las que está inscrito."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a student with a subject in which is enrolled."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Alumno"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estudia asignatura"
+  }, {
+    "@language" : "en",
+    "@value" : "Learns subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una asignatura con una instancia de método de evaluación."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a subject with an instance of evaluation method."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Evaluacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Evaluation method in subject"
+  }, {
+    "@language" : "es",
+    "@value" : "Sistema de evaluación en asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#imparteAsignatura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un profesor con una asignatura en la que imparte clase."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a teacher with a subject in which teaches."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Profesor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Imparte asignatura"
+  }, {
+    "@language" : "en",
+    "@value" : "Teaches subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#impartidoEn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una escuela con un título."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a school with a certificate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Impartido en"
+  }, {
+    "@language" : "en",
+    "@value" : "Teached in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#materialEnAsignatura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una asignatura con una instancia de material didáctico."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a subject with an instance of didactic material."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Material en asignatura"
+  }, {
+    "@language" : "en",
+    "@value" : "Material in subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#num_creditos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica el número de créditos que tiene una asignatura."
+  }, {
+    "@language" : "en",
+    "@value" : "Number of credits that a subject has."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Number of credits"
+  }, {
+    "@language" : "es",
+    "@value" : "Numero de créditos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceACurso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un curso con un semestre específico."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates course with a specific semester."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Semestre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Belongs to course"
+  }, {
+    "@language" : "es",
+    "@value" : "Pertenece a curso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceADoctorado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un programa de doctorado con su tesis."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a doctorate program with its thesis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Tesis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Belongs to doctorate"
+  }, {
+    "@language" : "es",
+    "@value" : "Pertenece a doctorado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceASemestre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un semestre con uns asignatura."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a semester with a subject."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Belongs to semester"
+  }, {
+    "@language" : "es",
+    "@value" : "Pertenece a semestre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Semestre"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#tieneAsignatura"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceATitulo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un título con un curso."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a course with a certificate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Belongs to certificate"
+  }, {
+    "@language" : "es",
+    "@value" : "Pertenece a título"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceAUniversidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una Universidad con una escuela determinada."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a University with a certain school."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Belongs to University"
+  }, {
+    "@language" : "es",
+    "@value" : "PerteneceAUniversidad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Universidad"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#tieneEscuela"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tareaEnDoctorado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un programa de doctorado con una instancia de tarea de investigación."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a doctorate program with an instance of research task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Tarea_investigacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tarea en doctorado"
+  }, {
+    "@language" : "en",
+    "@value" : "Task in doctorate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneAsignatura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una asignatura con un semestre que la contiene."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a subject with its semester."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Semestre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has subject"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneCompetencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una competencia determinada con una asignatura."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a competence with a subject."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has competence"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene competencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Competencia"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneCurso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona cada curso con el título al que pertenece."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a course with their corresponding certificate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has course"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene curso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#perteneceATitulo"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneEscuela",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una escuela con la Universidad a la que pertenece."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a school with the University that it belongs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Universidad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has school"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene escuela"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una instancia de material didáctico con la asignatura en la que se usa."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an instance of didactic material with a certain subject."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has material"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Material"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#materialEnAsignatura"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneSemestre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un semestre con el curso al que pertenece."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a specific semester with a certain course."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has semester"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene semestre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Semestre"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#perteneceACurso"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una instancia de método de evaluación con la asignatura en la que se utiliza."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an instance of evaluation method with the subject in which it is used."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has evaluation method"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene sistema de evaluación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Evaluacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una instancia de tarea de investigación con el doctorado en el que se desarrolla."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an instance of research task with the doctorate program in which is being performed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has research task"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene tarea de investigación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Tarea_investigacion"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneTesis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona una tesis con un programa de doctorado al que pertenece."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a thesis with a doctorate program."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has Thesis"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene Tesis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Tesis"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#perteneceADoctorado"
+  } ]
+}, {
+  "@id" : "http://www.ontoedsup.org/vocabulary#tieneTitulo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona un título con la escuela en la que se imparte."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a degree with a school in which is carried out."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has degree"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene Título"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.ontoedsup.org/vocabulary#impartidoEn"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#cardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/org#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
