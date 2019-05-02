@@ -1,12 +1,12 @@
-@prefix : <http://www.ontoedsup.org/vocabulary#> .
+@prefix edsup: <https://github.com/Xachap/EdSup/edsup#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.ontoedsup.org/vocabulary> .
+@base <https://github.com/Xachap/EdSup/edsup> .
 
-<http://www.ontoedsup.org/vocabulary> rdf:type owl:Ontology ;
+<https://github.com/Xachap/EdSup/edsup> rdf:type owl:Ontology ;
                                        <http://purl.org/dc/terms/created> "2019-04-03"^^xsd:date ;
                                        <http://purl.org/dc/terms/creator> _:genid2147483664 ;
                                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
@@ -51,7 +51,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor
+###  https://github.com/Xachap/EdSup/edsup#asignaturaEstudiadaPor
 :asignaturaEstudiadaPor rdf:type owl:ObjectProperty ;
                         owl:inverseOf :estudiaAsignatura ;
                         rdfs:domain :Asignatura ;
@@ -62,7 +62,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                    "Subject learned by"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor
+###  https://github.com/Xachap/EdSup/edsup#asignaturaImpartidaPor
 :asignaturaImpartidaPor rdf:type owl:ObjectProperty ;
                         rdfs:domain :Asignatura ;
                         rdfs:range :Profesor ;
@@ -72,7 +72,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                    "Subject teached by"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura
+###  https://github.com/Xachap/EdSup/edsup#competenciaEnAsignatura
 :competenciaEnAsignatura rdf:type owl:ObjectProperty ;
                          owl:inverseOf :tieneCompetencia ;
                          rdfs:domain :Competencia ;
@@ -83,7 +83,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                     "Competencia en asignatura"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#coordinaCurso
+###  https://github.com/Xachap/EdSup/edsup#coordinaCurso
 :coordinaCurso rdf:type owl:ObjectProperty ;
                owl:inverseOf :cursoCoordinado ;
                rdfs:domain :Coordinador ;
@@ -94,7 +94,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                           "Coordinates course"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#cursoCoordinado
+###  https://github.com/Xachap/EdSup/edsup#cursoCoordinado
 :cursoCoordinado rdf:type owl:ObjectProperty ;
                  rdfs:domain :Curso ;
                  rdfs:range :Coordinador ;
@@ -104,7 +104,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                             "Curso coordinado"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#dirigeEscuela
+###  https://github.com/Xachap/EdSup/edsup#dirigeEscuela
 :dirigeEscuela rdf:type owl:ObjectProperty ;
                owl:inverseOf :escuelaDirigida ;
                rdfs:domain :Director ;
@@ -115,7 +115,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                           "Heads up school"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#escuelaDirigida
+###  https://github.com/Xachap/EdSup/edsup#escuelaDirigida
 :escuelaDirigida rdf:type owl:ObjectProperty ;
                  rdfs:domain :Escuela ;
                  rdfs:range :Director ;
@@ -125,7 +125,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                             "Escuela dirigida"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#estudiaAsignatura
+###  https://github.com/Xachap/EdSup/edsup#estudiaAsignatura
 :estudiaAsignatura rdf:type owl:ObjectProperty ;
                    rdfs:domain :Alumno ;
                    rdfs:range :Asignatura ;
@@ -135,7 +135,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                               "Learns subject"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura
+###  https://github.com/Xachap/EdSup/edsup#evaluacionEnAsignatura
 :evaluacionEnAsignatura rdf:type owl:ObjectProperty ;
                         rdfs:domain :Evaluacion ;
                         rdfs:range :Asignatura ;
@@ -145,7 +145,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                    "Sistema de evaluación en asignatura"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#imparteAsignatura
+###  https://github.com/Xachap/EdSup/edsup#imparteAsignatura
 :imparteAsignatura rdf:type owl:ObjectProperty ;
                    owl:inverseOf :asignaturaImpartidaPor ;
                    rdfs:domain :Profesor ;
@@ -156,7 +156,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                               "Teaches subject"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#impartidoEn
+###  https://github.com/Xachap/EdSup/edsup#impartidoEn
 :impartidoEn rdf:type owl:ObjectProperty ;
              rdfs:domain :Titulo ;
              rdfs:range :Escuela ;
@@ -166,7 +166,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                         "Teached in"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#materialEnAsignatura
+###  https://github.com/Xachap/EdSup/edsup#materialEnAsignatura
 :materialEnAsignatura rdf:type owl:ObjectProperty ;
                       rdfs:domain :Material ;
                       rdfs:range :Asignatura ;
@@ -176,7 +176,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                  "Material in subject"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#perteneceACurso
+###  https://github.com/Xachap/EdSup/edsup#perteneceACurso
 :perteneceACurso rdf:type owl:ObjectProperty ;
                  rdfs:domain :Semestre ;
                  rdfs:range :Curso ;
@@ -186,7 +186,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                             "Pertenece a curso"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#perteneceADoctorado
+###  https://github.com/Xachap/EdSup/edsup#perteneceADoctorado
 :perteneceADoctorado rdf:type owl:ObjectProperty ;
                      rdfs:domain :Tesis ;
                      rdfs:range :Doctorado ;
@@ -196,7 +196,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                 "Pertenece a doctorado"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#perteneceASemestre
+###  https://github.com/Xachap/EdSup/edsup#perteneceASemestre
 :perteneceASemestre rdf:type owl:ObjectProperty ;
                     owl:inverseOf :tieneAsignatura ;
                     rdfs:domain :Asignatura ;
@@ -207,7 +207,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                "Pertenece a semestre"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#perteneceATitulo
+###  https://github.com/Xachap/EdSup/edsup#perteneceATitulo
 :perteneceATitulo rdf:type owl:ObjectProperty ;
                   rdfs:domain :Curso ;
                   rdfs:range :Titulo ;
@@ -217,7 +217,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                              "Pertenece a título"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#perteneceAUniversidad
+###  https://github.com/Xachap/EdSup/edsup#perteneceAUniversidad
 :perteneceAUniversidad rdf:type owl:ObjectProperty ;
                        owl:inverseOf :tieneEscuela ;
                        rdfs:domain :Escuela ;
@@ -228,7 +228,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                   "PerteneceAUniversidad"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tareaEnDoctorado
+###  https://github.com/Xachap/EdSup/edsup#tareaEnDoctorado
 :tareaEnDoctorado rdf:type owl:ObjectProperty ;
                   owl:inverseOf :tieneTareaInvestigacion ;
                   rdfs:domain :Tarea_investigacion ;
@@ -239,7 +239,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                              "Task in doctorate"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneAsignatura
+###  https://github.com/Xachap/EdSup/edsup#tieneAsignatura
 :tieneAsignatura rdf:type owl:ObjectProperty ;
                  rdfs:domain :Semestre ;
                  rdfs:range :Asignatura ;
@@ -249,7 +249,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                             "Tiene asignatura"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneCompetencia
+###  https://github.com/Xachap/EdSup/edsup#tieneCompetencia
 :tieneCompetencia rdf:type owl:ObjectProperty ;
                   rdfs:domain :Asignatura ;
                   rdfs:range :Competencia ;
@@ -259,7 +259,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                              "Tiene competencia"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneCurso
+###  https://github.com/Xachap/EdSup/edsup#tieneCurso
 :tieneCurso rdf:type owl:ObjectProperty ;
             owl:inverseOf :perteneceATitulo ;
             rdfs:domain :Titulo ;
@@ -270,7 +270,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                        "Tiene curso"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneEscuela
+###  https://github.com/Xachap/EdSup/edsup#tieneEscuela
 :tieneEscuela rdf:type owl:ObjectProperty ;
               rdfs:domain :Universidad ;
               rdfs:range :Escuela ;
@@ -280,7 +280,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                          "Tiene escuela"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneMaterial
+###  https://github.com/Xachap/EdSup/edsup#tieneMaterial
 :tieneMaterial rdf:type owl:ObjectProperty ;
                owl:inverseOf :materialEnAsignatura ;
                rdfs:domain :Asignatura ;
@@ -291,7 +291,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                           "Tiene material"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneSemestre
+###  https://github.com/Xachap/EdSup/edsup#tieneSemestre
 :tieneSemestre rdf:type owl:ObjectProperty ;
                owl:inverseOf :perteneceACurso ;
                rdfs:domain :Curso ;
@@ -302,7 +302,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                           "Tiene semestre"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion
+###  https://github.com/Xachap/EdSup/edsup#tieneSistemaEvaluacion
 :tieneSistemaEvaluacion rdf:type owl:ObjectProperty ;
                         owl:inverseOf :evaluacionEnAsignatura ;
                         rdfs:domain :Asignatura ;
@@ -313,7 +313,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                    "Tiene sistema de evaluación"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion
+###  https://github.com/Xachap/EdSup/edsup#tieneTareaInvestigacion
 :tieneTareaInvestigacion rdf:type owl:ObjectProperty ;
                          rdfs:domain :Doctorado ;
                          rdfs:range :Tarea_investigacion ;
@@ -323,7 +323,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                     "Tiene tarea de investigación"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneTesis
+###  https://github.com/Xachap/EdSup/edsup#tieneTesis
 :tieneTesis rdf:type owl:ObjectProperty ;
             owl:inverseOf :perteneceADoctorado ;
             rdfs:domain :Doctorado ;
@@ -334,7 +334,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                        "Tiene Tesis"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#tieneTitulo
+###  https://github.com/Xachap/EdSup/edsup#tieneTitulo
 :tieneTitulo rdf:type owl:ObjectProperty ;
              owl:inverseOf :impartidoEn ;
              rdfs:domain :Escuela ;
@@ -349,7 +349,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://www.ontoedsup.org/vocabulary#num_creditos
+###  https://github.com/Xachap/EdSup/edsup#num_creditos
 :num_creditos rdf:type owl:DatatypeProperty ;
               rdfs:domain :Asignatura ;
               rdfs:range xsd:double ;
@@ -367,7 +367,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 <http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
 
 
-###  http://www.ontoedsup.org/vocabulary#Alumno
+###  https://github.com/Xachap/EdSup/edsup#Alumno
 :Alumno rdf:type owl:Class ;
         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
         rdfs:comment "Agent enrolled in several subjects, who seeks to obtain the fixed competences of a particular degree."@en ,
@@ -376,7 +376,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                    "Student"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#Asignatura
+###  https://github.com/Xachap/EdSup/edsup#Asignatura
 :Asignatura rdf:type owl:Class ;
             rdfs:subClassOf <http://xmlns.com/foaf/0.1/Group> ;
             rdfs:comment "Part of a semester, where a set of knowledge, that come specified in the competences, is teached. They use two different type of resources: didactic material and evaluation methods. Their duration is fixed by the number of credits."@en ,
@@ -385,7 +385,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                        "Subject"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#Competencia
+###  https://github.com/Xachap/EdSup/edsup#Competencia
 :Competencia rdf:type owl:Class ;
              rdfs:subClassOf owl:Thing ;
              rdfs:comment "Habilidades y/o conocimientos que el título debe reflejar. Se imparten en una o varias asignaturas."@es ,
@@ -394,7 +394,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                         "Competency"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#Coordinador
+###  https://github.com/Xachap/EdSup/edsup#Coordinador
 :Coordinador rdf:type owl:Class ;
              rdfs:subClassOf :Profesor ;
              rdfs:comment "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de un determinado curso."@es ,
@@ -403,7 +403,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                         "Coordinator"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#Curso
+###  https://github.com/Xachap/EdSup/edsup#Curso
 :Curso rdf:type owl:Class ;
        rdfs:subClassOf owl:Thing ;
        rdfs:comment "First temporal division of first and second cycle degrees. Corresponds to one year."@en ,
@@ -412,7 +412,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                   "Curso"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#Director
+###  https://github.com/Xachap/EdSup/edsup#Director
 :Director rdf:type owl:Class ;
           rdfs:subClassOf :Profesor ;
           rdfs:comment "Profesor que además tiene la obligación de asegurar el correcto funcionamiento de la escuela."@es ,
@@ -421,17 +421,17 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                      "Director"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#Doctorado
+###  https://github.com/Xachap/EdSup/edsup#Doctorado
 :Doctorado rdf:type owl:Class ;
            rdfs:subClassOf :Titulo ;
-           owl:disjointWith <http://www.ontoedsup.org/vocabulary#1_2_ciclo> ;
+           owl:disjointWith <https://github.com/Xachap/EdSup/edsup#1_2_ciclo> ;
            rdfs:comment "Third cycle degree that has a special structure respect to the 1st and 2nd cycle, so it composes a different subclass."@en ,
                         "Título de tercer ciclo que tiene una estructura especial respecto a los de 1º y 2º ciclo, por lo que compone otra subclase diferente"@es ;
            rdfs:label "Doctorado"@es ,
                       "Doctoral degree"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#Escuela
+###  https://github.com/Xachap/EdSup/edsup#Escuela
 :Escuela rdf:type owl:Class ;
          rdfs:subClassOf <http://www.w3.org/ns/org#Organization> ;
          rdfs:comment "A place where a number of specific degrees are taught."@en ,
@@ -440,7 +440,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                     "School"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#Evaluacion
+###  https://github.com/Xachap/EdSup/edsup#Evaluacion
 :Evaluacion rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:comment "A method or set of methods that ensures that the student has achieved the proposed competencies."@en ,
@@ -449,9 +449,9 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                        "Evaluation"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#Grado
+###  https://github.com/Xachap/EdSup/edsup#Grado
 :Grado rdf:type owl:Class ;
-       rdfs:subClassOf <http://www.ontoedsup.org/vocabulary#1_2_ciclo> ;
+       rdfs:subClassOf <https://github.com/Xachap/EdSup/edsup#1_2_ciclo> ;
        owl:disjointWith :Master ;
        rdfs:comment "First cycle degree, corresponds to the lowest educational step within higher education."@en ,
                     "Título de primer ciclo, corresponde a la formación más baja dentro de la educación superior."@es ;
@@ -459,16 +459,16 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                   "Grado"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#Master
+###  https://github.com/Xachap/EdSup/edsup#Master
 :Master rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.ontoedsup.org/vocabulary#1_2_ciclo> ;
+        rdfs:subClassOf <https://github.com/Xachap/EdSup/edsup#1_2_ciclo> ;
         rdfs:comment "Second cycle degree, with a duration shorter than that a Degree."@en ,
                      "Título de segundo ciclo, con duración inferior a la del Grado."@es ;
         rdfs:label "Bachelor's degree"@en ,
                    "Máster"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#Material
+###  https://github.com/Xachap/EdSup/edsup#Material
 :Material rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing ;
           rdfs:comment "Any resource that is provided to the student to develop a series of fixed competences."@en ,
@@ -477,7 +477,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                      "Material didáctico"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#Profesor
+###  https://github.com/Xachap/EdSup/edsup#Profesor
 :Profesor rdf:type owl:Class ;
           rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
           rdfs:comment "Agent in charge of providing educational material and evaluating students in one or more subjects."@en ,
@@ -486,7 +486,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                      "Teacher"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#Semestre
+###  https://github.com/Xachap/EdSup/edsup#Semestre
 :Semestre rdf:type owl:Class ;
           rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error2> ,
                           owl:Thing ;
@@ -496,7 +496,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                      "Semestre"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#Tarea_investigacion
+###  https://github.com/Xachap/EdSup/edsup#Tarea_investigacion
 :Tarea_investigacion rdf:type owl:Class ;
                      rdfs:subClassOf owl:Thing ;
                      rdfs:comment "Actividades a realizar a lo largo de un doctorado que están relacionadas con la tesis."@es ,
@@ -505,7 +505,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                 "Tarea de investigacion"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#Tesis
+###  https://github.com/Xachap/EdSup/edsup#Tesis
 :Tesis rdf:type owl:Class ;
        rdfs:subClassOf owl:Thing ;
        rdfs:comment "Trabajo que se realiza a lo largo de un doctorado, en el que se investiga sobre un tema en concreto para sacar conclusiones y resultados de utilidad."@es ,
@@ -514,7 +514,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                   "Thesis"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#Titulo
+###  https://github.com/Xachap/EdSup/edsup#Titulo
 :Titulo rdf:type owl:Class ;
         rdfs:subClassOf owl:Thing ;
         rdfs:comment "Academic itinerary where a series of concepts are taught. If the evaluation of these concepts is positive, the student obtains the certificate of degree."@en ,
@@ -523,7 +523,7 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                    "Título"@es .
 
 
-###  http://www.ontoedsup.org/vocabulary#Universidad
+###  https://github.com/Xachap/EdSup/edsup#Universidad
 :Universidad rdf:type owl:Class ;
              rdfs:subClassOf <http://www.w3.org/ns/org#Organization> ;
              rdfs:comment "Institución donde se imparten cada uno de los títulos de educación superior."@es ,
@@ -532,8 +532,8 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                         "University"@en .
 
 
-###  http://www.ontoedsup.org/vocabulary#1_2_ciclo
-<http://www.ontoedsup.org/vocabulary#1_2_ciclo> rdf:type owl:Class ;
+###  https://github.com/Xachap/EdSup/edsup#1_2_ciclo
+<https://github.com/Xachap/EdSup/edsup#1_2_ciclo> rdf:type owl:Class ;
                                                 rdfs:subClassOf :Titulo ;
                                                 rdfs:comment "Bachelor's and Master's degrees (subclass). They have in common their structure, since both are composed of a series of subjects encapsulated in courses and semesters."@en ,
                                                              "Títulos de grado y máster (subclase). Tienen en común su estructura, ya que ambos se componen de una serie de asignaturas encapsuladas en cursos y semestres."@es ;

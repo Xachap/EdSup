@@ -28,7 +28,7 @@
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary",
+  "@id" : "https://github.com/Xachap/EdSup/edsup",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -56,7 +56,7 @@
     "@value" : "0.1"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#1_2_ciclo",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#1_2_ciclo",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -73,10 +73,10 @@
     "@value" : "1_2_cycle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Titulo"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Alumno",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Alumno",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -96,7 +96,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -116,7 +116,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/Group"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Competencia",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Competencia",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -136,7 +136,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Coordinador",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Coordinador",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -153,10 +153,10 @@
     "@value" : "Coordinator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Profesor"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Profesor"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Curso",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Curso",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -176,7 +176,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Director",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Director",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -193,10 +193,10 @@
     "@value" : "Director"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Profesor"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Profesor"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Doctorado",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -213,13 +213,13 @@
     "@value" : "Doctoral degree"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Titulo"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#1_2_ciclo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#1_2_ciclo"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Escuela",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Escuela",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -239,7 +239,7 @@
     "@id" : "http://www.w3.org/ns/org#Organization"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Evaluacion",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Evaluacion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -259,7 +259,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Grado",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Grado",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -276,13 +276,13 @@
     "@value" : "Grado"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#1_2_ciclo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#1_2_ciclo"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Master"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Master"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Master",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Master",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -299,10 +299,10 @@
     "@value" : "Máster"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#1_2_ciclo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#1_2_ciclo"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Material",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Material",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -322,7 +322,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Profesor",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Profesor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -342,7 +342,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Semestre",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Semestre",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -364,7 +364,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Tarea_investigacion",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Tarea_investigacion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -384,7 +384,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Tesis",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Tesis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -404,7 +404,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Titulo",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Titulo",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -424,7 +424,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#Universidad",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#Universidad",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -444,7 +444,7 @@
     "@id" : "http://www.w3.org/ns/org#Organization"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#asignaturaEstudiadaPor",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#asignaturaEstudiadaPor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -454,7 +454,7 @@
     "@value" : "Relates a subject to its students."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -464,13 +464,13 @@
     "@value" : "Subject learned by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Alumno"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Alumno"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#estudiaAsignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#estudiaAsignatura"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#asignaturaImpartidaPor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -480,7 +480,7 @@
     "@value" : "Relates a subject with a teacher."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -490,10 +490,10 @@
     "@value" : "Subject teached by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Profesor"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Profesor"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#competenciaEnAsignatura",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#competenciaEnAsignatura",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -503,7 +503,7 @@
     "@value" : "Relates a subject with a competence."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Competencia"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Competencia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -513,13 +513,13 @@
     "@value" : "Competencia en asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#tieneCompetencia"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#tieneCompetencia"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#coordinaCurso",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#coordinaCurso",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -529,7 +529,7 @@
     "@value" : "Relates a coordinator with their corresponding course."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Coordinador"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Coordinador"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -539,13 +539,13 @@
     "@value" : "Coordinates course"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Curso"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#cursoCoordinado"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#cursoCoordinado"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#cursoCoordinado",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#cursoCoordinado",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -555,7 +555,7 @@
     "@value" : "Relates a course with a coordinator."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Curso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -565,10 +565,10 @@
     "@value" : "Curso coordinado"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Coordinador"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Coordinador"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#dirigeEscuela",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#dirigeEscuela",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -578,7 +578,7 @@
     "@value" : "Relates a director with its school."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Director"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Director"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -588,13 +588,13 @@
     "@value" : "Heads up school"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Escuela"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#escuelaDirigida"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#escuelaDirigida"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#escuelaDirigida",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#escuelaDirigida",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -604,7 +604,7 @@
     "@value" : "Relates a school with its director."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Escuela"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -614,10 +614,10 @@
     "@value" : "Escuela dirigida"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Director"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Director"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#estudiaAsignatura",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#estudiaAsignatura",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -627,7 +627,7 @@
     "@value" : "Relates a student with a subject in which is enrolled."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Alumno"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Alumno"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -637,10 +637,10 @@
     "@value" : "Learns subject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#evaluacionEnAsignatura",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -650,7 +650,7 @@
     "@value" : "Relates a subject with an instance of evaluation method."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Evaluacion"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Evaluacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -660,10 +660,10 @@
     "@value" : "Sistema de evaluación en asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#imparteAsignatura",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#imparteAsignatura",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -673,7 +673,7 @@
     "@value" : "Relates a teacher with a subject in which teaches."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Profesor"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Profesor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -683,13 +683,13 @@
     "@value" : "Teaches subject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#asignaturaImpartidaPor"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#asignaturaImpartidaPor"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#impartidoEn",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#impartidoEn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -699,7 +699,7 @@
     "@value" : "Relates a school with a certificate."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Titulo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -709,10 +709,10 @@
     "@value" : "Teached in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Escuela"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#materialEnAsignatura",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#materialEnAsignatura",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -722,7 +722,7 @@
     "@value" : "Relates a subject with an instance of didactic material."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Material"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Material"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -732,10 +732,10 @@
     "@value" : "Material in subject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#num_creditos",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#num_creditos",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -745,7 +745,7 @@
     "@value" : "Number of credits that a subject has."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -758,7 +758,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceACurso",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#perteneceACurso",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -768,7 +768,7 @@
     "@value" : "Relates course with a specific semester."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Semestre"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Semestre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -778,10 +778,10 @@
     "@value" : "Pertenece a curso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Curso"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceADoctorado",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#perteneceADoctorado",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -791,7 +791,7 @@
     "@value" : "Relates a doctorate program with its thesis."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Tesis"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Tesis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -801,10 +801,10 @@
     "@value" : "Pertenece a doctorado"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Doctorado"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceASemestre",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#perteneceASemestre",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -814,7 +814,7 @@
     "@value" : "Relates a semester with a subject."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -824,13 +824,13 @@
     "@value" : "Pertenece a semestre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Semestre"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Semestre"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#tieneAsignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#tieneAsignatura"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceATitulo",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#perteneceATitulo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -840,7 +840,7 @@
     "@value" : "Relates a course with a certificate."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Curso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -850,10 +850,10 @@
     "@value" : "Pertenece a título"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Titulo"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#perteneceAUniversidad",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#perteneceAUniversidad",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -863,7 +863,7 @@
     "@value" : "Relates a University with a certain school."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Escuela"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -873,13 +873,13 @@
     "@value" : "PerteneceAUniversidad"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Universidad"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Universidad"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#tieneEscuela"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#tieneEscuela"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tareaEnDoctorado",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tareaEnDoctorado",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -889,7 +889,7 @@
     "@value" : "Relates a doctorate program with an instance of research task."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Tarea_investigacion"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Tarea_investigacion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -899,13 +899,13 @@
     "@value" : "Task in doctorate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Doctorado"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#tieneTareaInvestigacion"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneAsignatura",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneAsignatura",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -915,7 +915,7 @@
     "@value" : "Relates a subject with its semester."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Semestre"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Semestre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -925,10 +925,10 @@
     "@value" : "Tiene asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneCompetencia",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneCompetencia",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -938,7 +938,7 @@
     "@value" : "Relates a competence with a subject."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -948,10 +948,10 @@
     "@value" : "Tiene competencia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Competencia"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Competencia"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneCurso",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneCurso",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -961,7 +961,7 @@
     "@value" : "Relates a course with their corresponding certificate."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Titulo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -971,13 +971,13 @@
     "@value" : "Tiene curso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Curso"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#perteneceATitulo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#perteneceATitulo"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneEscuela",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneEscuela",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -987,7 +987,7 @@
     "@value" : "Relates a school with the University that it belongs."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Universidad"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Universidad"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -997,10 +997,10 @@
     "@value" : "Tiene escuela"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Escuela"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneMaterial",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1010,7 +1010,7 @@
     "@value" : "Relates an instance of didactic material with a certain subject."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1020,13 +1020,13 @@
     "@value" : "Tiene material"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Material"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Material"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#materialEnAsignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#materialEnAsignatura"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneSemestre",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneSemestre",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1036,7 +1036,7 @@
     "@value" : "Relates a specific semester with a certain course."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Curso"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Curso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1046,13 +1046,13 @@
     "@value" : "Tiene semestre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Semestre"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Semestre"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#perteneceACurso"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#perteneceACurso"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneSistemaEvaluacion",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneSistemaEvaluacion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1062,7 +1062,7 @@
     "@value" : "Relates an instance of evaluation method with the subject in which it is used."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Asignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Asignatura"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1072,13 +1072,13 @@
     "@value" : "Tiene sistema de evaluación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Evaluacion"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Evaluacion"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#evaluacionEnAsignatura"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#evaluacionEnAsignatura"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneTareaInvestigacion",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneTareaInvestigacion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1088,7 +1088,7 @@
     "@value" : "Relates an instance of research task with the doctorate program in which is being performed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Doctorado"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1098,10 +1098,10 @@
     "@value" : "Tiene tarea de investigación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Tarea_investigacion"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Tarea_investigacion"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneTesis",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneTesis",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1111,7 +1111,7 @@
     "@value" : "Relates a thesis with a doctorate program."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Doctorado"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Doctorado"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1121,13 +1121,13 @@
     "@value" : "Tiene Tesis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Tesis"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Tesis"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#perteneceADoctorado"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#perteneceADoctorado"
   } ]
 }, {
-  "@id" : "http://www.ontoedsup.org/vocabulary#tieneTitulo",
+  "@id" : "https://github.com/Xachap/EdSup/edsup#tieneTitulo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
@@ -1137,7 +1137,7 @@
     "@value" : "Relates a degree with a school in which is carried out."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Escuela"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Escuela"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1147,10 +1147,10 @@
     "@value" : "Tiene Título"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#Titulo"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#Titulo"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.ontoedsup.org/vocabulary#impartidoEn"
+    "@id" : "https://github.com/Xachap/EdSup/edsup#impartidoEn"
   } ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#cardinality",
